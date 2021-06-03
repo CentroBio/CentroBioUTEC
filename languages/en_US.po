@@ -1,0 +1,278 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. Text in echo
+#: header.php:96
+msgid "ACERCA"
+msgstr "ABOUT"
+
+#. Text in echo
+#: header.php:166 header.php:310
+msgid "Agenda"
+msgstr "Agenda"
+
+#. Text in echo
+#: header.php:109 header.php:276
+msgid "Alianzas"
+msgstr "Partnerships"
+
+#. Text in echo
+#: header.php:189
+msgid "BIO"
+msgstr "BIO"
+
+#. Text in echo
+#: header.php:253
+msgid "BLOG"
+msgstr "BLOG"
+
+#. Text in echo
+#: single-investigadores-post.php:20
+msgid "Biografía"
+msgstr "Biography"
+
+#. Text in echo
+#: header.php:115 header.php:282
+msgid "Contacto"
+msgstr "Contact us"
+
+#. Text in echo
+#: header.php:188
+msgid "DE"
+msgstr " "
+
+#. Text in echo
+#: header.php:131
+msgid "EN"
+msgstr ""
+
+#. Text in echo
+#: header.php:161
+msgid "EVENTOS"
+msgstr "EVENTS"
+
+#. Text in echo
+#: single-investigadores-post.php:22
+msgid "Enseñanza"
+msgstr "Teaching experience"
+
+#. Text in echo
+#: header.php:106 header.php:273
+msgid "Equipo"
+msgstr "Staff"
+
+#. Text in echo
+#: header.php:82
+msgid "INICIO"
+msgstr "HOME"
+
+#. Text in echo
+#: header.php:238 header.php:130 header.php:289
+msgid "INVESTIGACIÓN"
+msgstr "RESEARCH"
+
+#. Text in echo
+#: single-investigadores-post.php:21
+msgid "Investigación"
+msgstr "Research"
+
+#. Text in echo
+#: header.php:112 header.php:279
+msgid "Investigadores"
+msgstr "Researchers"
+
+#. Text in echo
+#: header.php:140 header.php:296
+msgid "Laboratorios"
+msgstr "Laboratories"
+
+#. Text in echo
+#: header.php:137 header.php:293
+msgid "Líneas de investigación"
+msgstr "Research areas"
+
+#. Text in echo
+#: header.php:89 header.php:235 header.php:266
+msgid "NOSOTROS"
+msgstr "ABOUT US"
+
+#. Text in echo
+#: header.php:248 header.php:187 header.php:320
+msgid "NOTICIAS"
+msgstr "NEWS"
+
+#. Text in echo
+#: inicio.php:140
+msgid "NUESTROS ALIADOS"
+msgstr "PARTNERSHIPS"
+
+#. Text in echo
+#: header.php:103 header.php:270
+msgid "Nosotros"
+msgstr "About us"
+
+#. Text in echo
+#: header.php:194 header.php:324
+msgid "Noticias"
+msgstr "News"
+
+#. Text in echo
+#: single.php:13
+msgid "Otras publicaciones"
+msgstr "More posts"
+
+#. Text in echo
+#: header.php:143 header.php:299
+msgid "Proyectos"
+msgstr "Projects"
+
+#. Text in echo
+#: single-investigadores-post.php:23
+msgid "Publicaciones"
+msgstr "Papers"
+
+#. Text in echo
+#: header.php:159
+msgid "SEMINARIOS"
+msgstr "SEMINARS"
+
+#. Text in echo
+#: header.php:243 header.php:306 inicio.php:73
+msgid "SEMINARIOS Y EVENTOS"
+msgstr "SEMINARS AND EVENTS"
+
+#. Text in echo
+#: footer.php:21
+msgid "Todos los derechos reservados"
+msgstr "All rights reserved"
+
+#. Text in echo
+#: header.php:197 header.php:327
+msgid "Trabaja con nosotros"
+msgstr "Work with us"
+
+#. Text in echo
+#: inicio.php:97 inicio.php:130
+msgid "VER MÁS"
+msgstr "SEE MORE"
+
+#. Text in echo
+#: home.php:19
+msgid "VER MÁS..."
+msgstr "SEE MORE..."
+
+#. Text in echo
+#: inicio.php:63 noticias.php:44
+msgid "VER NOTICIA"
+msgstr "MORE INFO"
+
+#. Text in echo
+#: trabaja-con-nosotros.php:32
+msgid "VER OFERTA"
+msgstr "MORE INFO"
+
+#. Text in echo
+#: header.php:318
+msgid "VOLVER"
+msgstr "GO BACK"
+
+#. Text in echo
+#: eventos.php:39 proyectos.php:30
+msgid "Ver más"
+msgstr "See more"
+
+#. Text in echo
+#: header.php:169 header.php:313
+msgid "Visitantes académicos"
+msgstr "Scholarships"
+
+#. Text in echo
+#: header.php:160
+msgid "Y"
+msgstr ""
+
+#. Text in echo
+#: header.php:151 header.php:166 header.php:310
+msgid "agenda"
+msgstr "our-agenda"
+
+#. Text in echo
+#: header.php:109 header.php:276
+msgid "alianzas"
+msgstr "partnerships"
+
+#. Text in echo
+#: header.php:205 header.php:252
+msgid "blog"
+msgstr "our-blog"
+
+#. Text in echo
+#: header.php:115 header.php:282
+msgid "contacto"
+msgstr "contact-us"
+
+#. Text in echo
+#: header.php:106 header.php:273
+msgid "equipo"
+msgstr "staff"
+
+#. Text in echo
+#: header.php:72 header.php:80 header.php:228
+msgid "inicio"
+msgstr "home"
+
+#. Text in echo
+#: header.php:112 header.php:279
+msgid "investigadores"
+msgstr "researchers"
+
+#. Text in echo
+#: header.php:140 header.php:296
+msgid "laboratorios"
+msgstr "laboratories"
+
+#. Text in echo
+#: header.php:122 header.php:137 header.php:293
+msgid "lineas-de-investigacion"
+msgstr "research-areas"
+
+#. Text in echo
+#: header.php:86 header.php:103 header.php:270
+msgid "nosotros"
+msgstr "about-us"
+
+#. Text in echo
+#: header.php:179 header.php:194 header.php:324
+msgid "noticias"
+msgstr "news"
+
+#. Text in echo
+#: header.php:143 header.php:299
+msgid "proyectos"
+msgstr "projects"
+
+#. Text in echo
+#: header.php:197 header.php:327
+msgid "trabaja-con-nosotros"
+msgstr "work-with-us"
+
+#. Text in echo
+#: header.php:169 header.php:313
+msgid "visitantes-academicos"
+msgstr "scholarships"
+
+#. Text in echo
+#: inicio.php:9
+msgid "ÚLTIMAS"
+msgstr "RECENT"
