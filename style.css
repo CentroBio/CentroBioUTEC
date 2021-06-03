@@ -1849,6 +1849,11 @@ button.classic button.classic:after {
 }
 /*Alianzas*/
 
+.slider-aliados {
+  width: 100%;
+  margin: 4.25rem 0 10rem;
+}
+
 .slider-aliados .slick-dots {
   bottom: -110px;
 }
@@ -1859,7 +1864,6 @@ button.classic button.classic:after {
 }
 
 .slider-aliados .slick-dots li button::before:hover {
-  font-size: 11px;
   color: var(--colorPrincipal);
 }
 
@@ -1870,6 +1874,119 @@ button.classic button.classic:after {
 .slider-aliados .slick-dots li button:hover::before {
   color: var(--colorPrincipal);
   opacity: 0.5;
+}
+
+@media (min-width: 320px) {
+  .slider-aliados {
+    width: 100%;
+    margin: 4.25rem 0 10rem;
+  }
+
+  .slider-aliados .slick-dots {
+    bottom: -50px;
+  }
+
+  .slider-aliados .slick-dots li {
+    margin: 0 2.5px;
+  }
+
+  .slider-aliados .slick-dots li button::before {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 576px) {
+  .slider-aliados {
+    width: 100%;
+    margin: 4.25rem 0 10rem;
+  }
+
+  .slider-aliados .slick-dots {
+    bottom: -70px;
+  }
+
+  .slider-aliados .slick-dots li {
+    margin: 0 5px;
+  }
+
+  .slider-aliados .slick-dots li button::before {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-aliados {
+    width: 100%;
+    margin: 4.25rem 0 10rem;
+  }
+
+  .slider-aliados .slick-dots {
+    bottom: -90px;
+  }
+
+  .slider-aliados .slick-dots li button::before {
+    font-size: 8.5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-aliados {
+    width: 100%;
+    margin: 4.25rem 0 10rem;
+  }
+
+  .slider-aliados .slick-dots {
+    bottom: -110px;
+  }
+
+  .slider-aliados .slick-dots li button::before {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider-aliados {
+    width: 100%;
+    margin: 4.25rem 0 10rem;
+  }
+
+  .slider-aliados .slick-dots {
+    bottom: -110px;
+  }
+
+  .slider-aliados .slick-dots li button::before {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .slider-aliados {
+    width: 100%;
+    margin: 4.25rem 0 10rem;
+  }
+
+  .slider-aliados .slick-dots {
+    bottom: -110px;
+  }
+
+  .slider-aliados .slick-dots li button::before {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .slider-aliados {
+    width: 100%;
+    margin: 4.25rem 0 10rem;
+  }
+
+  .slider-aliados .slick-dots {
+    bottom: -110px;
+  }
+
+  .slider-aliados .slick-dots li button::before {
+    font-size: 11px;
+  }
 }
 
 .aliados {

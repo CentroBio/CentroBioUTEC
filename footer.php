@@ -54,7 +54,34 @@
             slidesToScroll: 1,
             arrows: false,
             dots: true,
-            appendDots: ".slider-aliados"
+            appendDots: ".slider-aliados",
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 577,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 350,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                }
+            ]
+
         });
 
     });
