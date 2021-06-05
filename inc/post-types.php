@@ -32,15 +32,28 @@ add_action( 'init', 'menu_eventos' );
 /*Equipo*/
 
 function menu_equipo() {
+
    $args = array(
-        'public' => true,
-       'menu_icon' => 'dashicons-groups',
-       'show_in_menu'       => true,
-        'label'  => 'Equipo',
-       'supports'=>array('title', 'thumbnail','editor')
-    );
-  
-    register_post_type( 'equipo-post', $args );
+      'public' => true,
+      'menu_icon' => 'dashicons-groups',
+      'show_in_menu' => true,
+      'label' => 'Equipo',
+      'supports' => array('title', 'thumbnail','editor'),
+   );
+   register_post_type( 'equipo-post', $args );
+
+   $args = array(
+      'hierarchical'      => true,
+      'show_ui'           => true,
+      'show_admin_column' => true,
+      'label'             => 'Tipo staff',
+      'query_var'         => true,
+      'labels'      => array(
+                        'all_items'         => __('Tipos staff'),
+                        ),
+      'rewrite'           => array( 'slug' => 'tipo-staff' ),
+   );
+   register_taxonomy('tipo-staff', array('equipo-post'), $args );
 
 }
 add_action( 'init', 'menu_equipo' );

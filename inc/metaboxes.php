@@ -94,19 +94,21 @@ function metabox_ofertas() {
 
 add_action( 'cmb2_init', 'metabox_equipo' );
 function metabox_equipo() {
+
     $prefix = '_equipo_';
-            $cmb = new_cmb2_box( array(
-            'id'           => $prefix . 'equipo',
-            'title'        => 'Información adicional',
-            'object_types' => array( 'equipo-post' ),
-            'context'      => 'normal',
-            'priority'     => 'default',
-        ) );
-       $cmb->add_field( array(
-            'name' => 'Cargo',
-            'id' => $prefix . 'cargo',
-            'type' => 'text',
-        ) );
+
+    $cmb = new_cmb2_box( array(
+        'id'           => $prefix . 'equipo',
+        'title'        => 'Información adicional',
+        'object_types' => array( 'equipo-post' ),
+        'context'      => 'normal',
+        'priority'     => 'default',
+    ));
+    $cmb->add_field( array(
+        'name' => 'Cargo',
+        'id' => $prefix . 'cargo',
+        'type' => 'text',
+    ) );
 }
 
 add_action( 'cmb2_init', 'metabox_visitantes' );
