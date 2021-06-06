@@ -178,14 +178,18 @@ get_header(); ?>
                 }
             </style>
 
-            <div class="slider-aliados" style="width: 100%; margin: 4.25rem 0 10rem">
+            <div class="slider-aliados">
 
                 <?php if ( $query->have_posts() ) : ?>
 
                     <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                        <div class="slide-aliado" style="height: 6rem; width: 500px !important">
-                            <img style="height: 6rem; width: 100%; object-fit: contain" class="aliado-logo" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"/>
+                        <div class="slide-aliado">
+
+                            <a href="<?php echo get_post_meta( get_the_ID(), '_aliado_enlace_web', 1 );?>" target="_blank">
+                                <img class="aliado-logo" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"/>
+                            </a>
+                            
                         </div>  
 
                     <?php endwhile;?> 

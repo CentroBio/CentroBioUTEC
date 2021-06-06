@@ -15,6 +15,7 @@ get_header();
     <?php	
                 $args = array(
                     'post_type' => 'post',
+                    'posts_per_page' => 5,
                     'post__not_in' => array($pID),
                 );
                 $query = new WP_Query( $args );

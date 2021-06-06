@@ -96,7 +96,9 @@
                                             <?php _e('ACERCA', 'inotheme') ?><br> <span class="black">
                                                 <?php _e('DE', 'inotheme') ?></span><br>
                                             <?php _e('BIO', 'inotheme') ?>
+                                            
                                         </h1>
+                                        <p><?php _e('ACERCA', 'inotheme') ?></p>
                                     </div>
                                     <ul>
                                         <li><a
@@ -134,6 +136,7 @@
                                                 <?php _e('EN', 'inotheme') ?></span><br>
                                             <?php _e('BIO', 'inotheme') ?>
                                         </h1>
+                                        <p><?php _e('INVESTIGACIÓN', 'inotheme') ?></p>
                                     </div>
                                     <ul>
                                         <li><a
@@ -163,6 +166,7 @@
                                                 <?php _e('Y', 'inotheme') ?></span><br>
                                             <?php _e('EVENTOS', 'inotheme') ?>
                                         </h1>
+                                        <p><?php _e('SEMINARIOS', 'inotheme') ?></p>
                                     </div>                         
                                     <ul>
                                         <li><a

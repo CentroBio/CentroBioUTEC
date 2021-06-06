@@ -68,6 +68,11 @@ function metabox_aliado() {
             'id' => $prefix . 'rama',
             'type' => 'text',
         ) );
+        $cmb->add_field( array(
+            'name' => 'Enlace web',
+            'id' => $prefix . 'enlace_web',
+            'type' => 'text',
+        ) );
 }
 
 add_action( 'cmb2_init', 'metabox_ofertas' );
@@ -150,6 +155,16 @@ function metabox_investigador() {
             'type' => 'text',
         ) );
         $cmb->add_field( array(
+            'name' => 'Institución',
+            'id' => $prefix . 'institucion',
+            'type' => 'text',
+        ) );
+        $cmb->add_field( array(
+            'name' => 'Link institución',
+            'id' => $prefix . 'link_institucion',
+            'type' => 'text',
+        ) );
+        $cmb->add_field( array(
             'name' => 'Estudios',
             'id' => $prefix . 'estudios',
             'type' => 'text',
@@ -191,6 +206,29 @@ function metabox_imagen_slider() {
             'id' => $prefix . 'descripcion',
             'type'    => 'wysiwyg',
         ) );
+}
+
+add_action( 'cmb2_init', 'metabox_laboratorios' );
+
+function metabox_laboratorios() {
+    $prefix = '_laboratorios_';
+    $cmb = new_cmb2_box( array(
+        'id'           => $prefix . 'laboratorios',
+        'title'        => 'Información',
+        'object_types' => array( 'laboratorios-post' ),
+        'context'      => 'normal',
+        'priority'     => 'default',
+    ) );
+    $cmb->add_field( array(
+        'name' => 'Link página web',
+        'id' => $prefix . 'link_web',
+        'type'    => 'text',
+    ) );
+    $cmb->add_field( array(
+        'name' => 'Texto descriptivo',
+        'id' => $prefix . 'texto_descriptivo',
+        'type'    => 'text',
+    ) );
 }
 
 ?>

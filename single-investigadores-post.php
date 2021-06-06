@@ -25,7 +25,7 @@ get_header(); ?>
                 <button 
                         class="investigador-tab-btn" 
                         data-tab="investigacion">
-                    <?php _e('Investigación', 'inotheme') ?>
+                    <?php _e('Líneas de investigación', 'inotheme') ?>
                 </button>
                 <button 
                         class="investigador-tab-btn" 

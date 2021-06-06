@@ -49,6 +49,7 @@
 
         $('.slider-aliados').slick({
             autoplay: true,
+            cssEase: 'cubic-bezier(0.33, 1, 0.68, 1)',
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,

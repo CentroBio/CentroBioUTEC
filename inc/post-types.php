@@ -136,7 +136,7 @@ function menu_laboratorios() {
        'show_in_menu'       => true,
         'label'  => 'Laboratorios',
         'show_in_rest' => true,
-        'supports'=>array('title', 'thumbnail','editor')
+        'supports'=>array('title', 'thumbnail')
       );
   
     register_post_type( 'laboratorios-post', $args );

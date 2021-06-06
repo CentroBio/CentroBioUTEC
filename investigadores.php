@@ -43,11 +43,23 @@ get_header(); ?>
                                     <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 170, 170, true ) ); ?>"
                                         alt="<?php echo get_the_title();?>">
                                 </div>
-                            <div class="descripcion grid cy">
-                                <h3 class="w100"><?php echo get_the_title();?></h3>
-                                <h4 class="w100"><?php echo get_post_meta( get_the_ID(), '_investigador_titulo', 1 ); ?></h4>
-                                <p class="w100"><?php echo get_post_meta( get_the_ID(), '_investigador_estudios', 1 ); ?></p>
-                                <p class="w100"><?php echo get_post_meta( get_the_ID(), '_investigador_correo', 1 ); ?></p>
+                                <div class="descripcion grid cy">
+
+                                    <h3 class="w100"><?php echo get_the_title();?></h3>
+                                    <h4 class="w100"><?php echo get_post_meta( get_the_ID(), '_investigador_titulo', 1 ); ?></h4>
+                                
+                                    <?php if ($term->slug != 'investigadores-adjuntos') { ?>
+
+                                        <p class="w100"><?php echo get_post_meta( get_the_ID(), '_investigador_correo', 1 ); ?></p>
+
+                                    <?php } ?>
+
+                                    <?php if ($term->slug == 'investigadores-adjuntos') { ?>
+
+                                        <p class="w100"><?php echo get_post_meta( get_the_ID(), '_investigador_institucion', 1 ); ?></p> 
+                     
+                                    <?php } ?>
+                                    
                                 </div>
                             </a>
                         <?php endwhile;?>                               
