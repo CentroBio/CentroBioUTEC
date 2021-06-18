@@ -17,6 +17,7 @@
     <?php wp_head(); ?>
 
 </head>
+
 <body <?php body_class(); ?>>
     <div class="tool-bar">
         <ul>
@@ -28,6 +29,7 @@
     .banner>div:first-child {
         display: block;
     }
+
     .tool-bar {
         background-color: #f1f1f1;
         text-align: right;
@@ -60,6 +62,7 @@
     .lang {
         background: #f1f1f1 !important;
     }
+
     .lang a {
         width: 40%;
         background: #c4c3c4;
@@ -76,11 +79,11 @@
             <div class="nav">
                 <div class="menu-navigator-container">
                     <ul id="menu-navigator" class="menu">
-                    <li>
-                        <a href="/<?php _e('inicio', 'inotheme') ?>" class="parent">
+                        <li>
+                            <a href="/<?php _e('inicio', 'inotheme') ?>" class="parent">
                                 <div><i class="icono icono-inicio"></i></div>
                                 <?php _e('INICIO', 'inotheme') ?>
-                        </a>
+                            </a>
                         </li>
                         <li>
                             <a class="parent" href="/<?php _e('nosotros', 'inotheme') ?>">
@@ -88,7 +91,7 @@
                                 </div>
                                 <?php _e('NOSOTROS', 'inotheme') ?>
 
-                                </a>
+                            </a>
                             <div class="sub-menu">
                                 <div class="seccion-centrada">
                                     <div class="descripcion">
@@ -96,9 +99,10 @@
                                             <?php _e('ACERCA', 'inotheme') ?><br> <span class="black">
                                                 <?php _e('DE', 'inotheme') ?></span><br>
                                             <?php _e('BIO', 'inotheme') ?>
-                                            
+
                                         </h1>
-                                        <p><?php _e('ACERCA', 'inotheme') ?></p>
+                                        <p><?php _e('Conoce más de las autoridades, equipos y las instituciones con las cuales el Centro BIO viene desarrollando alianzas en investigación y desarrollo.', 'inotheme') ?>
+                                        </p>
                                     </div>
                                     <ul>
                                         <li><a
@@ -118,7 +122,7 @@
                                         </li>
                                         <li><a
                                                 href="/<?php _e('trabaja-con-nosotros', 'inotheme') ?>"><?php _e('Trabaja con nosotros', 'inotheme') ?></a>
-                                        </li>  
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -127,7 +131,7 @@
                             <a class="parent" href="/<?php _e('lineas-de-investigacion', 'inotheme') ?>">
                                 <div><i class="icono icono-investigacion"></i></div>
                                 <?php _e('INVESTIGACIÓN', 'inotheme') ?>
-                            </a> 
+                            </a>
                             <div class="sub-menu">
                                 <div class="seccion-centrada">
                                     <div class="descripcion">
@@ -136,7 +140,8 @@
                                                 <?php _e('EN', 'inotheme') ?></span><br>
                                             <?php _e('BIO', 'inotheme') ?>
                                         </h1>
-                                        <p><?php _e('INVESTIGACIÓN', 'inotheme') ?></p>
+                                        <p><?php _e('El Centro BIO desarrolla sus lineas de investigación de manera multidisciplanaria integrando ramas de la ingeniería y la biomedicina. Entérate de esto y sus principales proyectos en esta sección.', 'inotheme') ?>
+                                        </p>
                                     </div>
                                     <ul>
                                         <li><a
@@ -148,26 +153,27 @@
                                         <li><a
                                                 href="/<?php _e('proyectos', 'inotheme') ?>"><?php _e('Proyectos', 'inotheme') ?></a>
                                         </li>
-                                   
+
                                     </ul>
                                 </div>
-                            </div>                         
+                            </div>
                         </li>
                         <li>
                             <a class="parent" href="/<?php _e('agenda', 'inotheme') ?>">
                                 <div><i class="icono icono-educacion"></i></div>
                                 <?php _e('SEMINARIOS Y EVENTOS', 'inotheme') ?>
-                            </a>  
+                            </a>
                             <div class="sub-menu">
-                                <div class="seccion-centrada">      
+                                <div class="seccion-centrada">
                                     <div class="descripcion">
                                         <h1>
                                             <?php _e('SEMINARIOS', 'inotheme') ?><br> <span class="black">
                                                 <?php _e('Y', 'inotheme') ?></span><br>
                                             <?php _e('EVENTOS', 'inotheme') ?>
                                         </h1>
-                                        <p><?php _e('SEMINARIOS', 'inotheme') ?></p>
-                                    </div>                         
+                                        <p><?php _e('A través del Centro BIO y la carrera de Bioingeniería de UTEC, se desarrollan todos los años una serie de eventos y capactaciones que promueven la investigación contando con la participación de excelentes profesionales nacionales e internacionales. ', 'inotheme') ?>
+                                        </p>
+                                    </div>
                                     <ul>
                                         <li><a
                                                 href="/<?php _e('agenda', 'inotheme') ?>"><?php _e('Agenda', 'inotheme') ?></a>
@@ -175,24 +181,24 @@
                                         <li><a
                                                 href="/<?php _e('visitantes-academicos', 'inotheme') ?>"><?php _e('Visitantes académicos', 'inotheme') ?></a>
                                         </li>
-                                        
+
                                     </ul>
                                 </div>
-                            </div>                        
+                            </div>
                         </li>
-                  
-                       
+
+
                         <li>
                             <a class="parent" href="/<?php _e('noticias', 'inotheme')?>">
                                 <div><i class="icono icono-n-y-e"></i></div>
                                 <?php _e('NOTICIAS', 'inotheme') ?>
-                            </a>                            
+                            </a>
                         </li>
                         <li>
                             <a class="parent" href="/<?php _e('blog', 'inotheme')?>">
                                 <div><i class="icono icono-blog"></i></div>
                                 <?php _e('BLOG', 'inotheme') ?>
-                            </a>                          
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -213,7 +219,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="/<?php _e('inicio', 'inotheme') ?>">
-                    <img src="/wp-content/themes/BioUTEC/img/bio utec logo.svg" alt="logo">
+                        <img src="/wp-content/themes/BioUTEC/img/bio utec logo.svg" alt="logo">
                     </a>
                 </div>
                 <div id="navbar-2" class="navbar-vert" aria-expanded="false">
@@ -225,7 +231,7 @@
                                 <?php _e('INVESTIGACIÓN', 'inotheme') ?>
                             </a>
                         </li>
-                       
+
                         <li><a class="drop-submenu" data-target="sub-s-y-e">
                                 <?php _e('SEMINARIOS Y EVENTOS', 'inotheme') ?>
 
@@ -253,25 +259,21 @@
                             <?php _e('NOSOTROS', 'inotheme') ?>
                         </a></h3>
                     <ul class="nav">
-                    <li><a
-                            href="/<?php _e('nosotros', 'inotheme') ?>"><?php _e('Nosotros', 'inotheme') ?></a>
-                    </li>                                       
-                    <li><a
-                            href="/<?php _e('equipo', 'inotheme') ?>"><?php _e('Equipo', 'inotheme') ?></a>
-                    </li>
-                    <li><a
-                            href="/<?php _e('alianzas', 'inotheme') ?>"><?php _e('Alianzas', 'inotheme') ?></a>
-                    </li>
-                    <li><a
-                            href="/<?php _e('investigadores', 'inotheme') ?>"><?php _e('Investigadores', 'inotheme') ?></a>
-                    </li>
-                    
-                    <li><a
-                            href="/<?php _e('contacto', 'inotheme') ?>"><?php _e('Contacto', 'inotheme') ?></a>
-                    </li>
-                    <li><a
-                            href="/<?php _e('trabaja-con-nosotros', 'inotheme') ?>"><?php _e('Trabaja con nosotros', 'inotheme') ?></a>
-                    </li>
+                        <li><a href="/<?php _e('nosotros', 'inotheme') ?>"><?php _e('Nosotros', 'inotheme') ?></a>
+                        </li>
+                        <li><a href="/<?php _e('equipo', 'inotheme') ?>"><?php _e('Equipo', 'inotheme') ?></a>
+                        </li>
+                        <li><a href="/<?php _e('alianzas', 'inotheme') ?>"><?php _e('Alianzas', 'inotheme') ?></a>
+                        </li>
+                        <li><a
+                                href="/<?php _e('investigadores', 'inotheme') ?>"><?php _e('Investigadores', 'inotheme') ?></a>
+                        </li>
+
+                        <li><a href="/<?php _e('contacto', 'inotheme') ?>"><?php _e('Contacto', 'inotheme') ?></a>
+                        </li>
+                        <li><a
+                                href="/<?php _e('trabaja-con-nosotros', 'inotheme') ?>"><?php _e('Trabaja con nosotros', 'inotheme') ?></a>
+                        </li>
                     </ul>
                 </div>
                 <div id="sub-investigacion" class="navbar-vert sub-navbar" aria-expanded="false">
@@ -280,32 +282,30 @@
                             <?php _e('INVESTIGACIÓN', 'inotheme') ?>
                         </a></h3>
                     <ul class="nav">
-                    <li><a
-                            href="/<?php _e('lineas-de-investigacion', 'inotheme') ?>"><?php _e('Líneas de investigación', 'inotheme') ?></a>
-                    </li>                                       
-                    <li><a
-                            href="/<?php _e('laboratorios', 'inotheme') ?>"><?php _e('Laboratorios', 'inotheme') ?></a>
-                    </li>
-                    <li><a
-                            href="/<?php _e('proyectos', 'inotheme') ?>"><?php _e('Proyectos', 'inotheme') ?></a>
-                    </li>
+                        <li><a
+                                href="/<?php _e('lineas-de-investigacion', 'inotheme') ?>"><?php _e('Líneas de investigación', 'inotheme') ?></a>
+                        </li>
+                        <li><a
+                                href="/<?php _e('laboratorios', 'inotheme') ?>"><?php _e('Laboratorios', 'inotheme') ?></a>
+                        </li>
+                        <li><a href="/<?php _e('proyectos', 'inotheme') ?>"><?php _e('Proyectos', 'inotheme') ?></a>
+                        </li>
                     </ul>
-                </div>    
+                </div>
                 <div id="sub-s-y-e" class="navbar-vert sub-navbar" aria-expanded="false">
                     <div class="regresar-head-btn"><?php _e('VOLVER', 'inotheme') ?></div>
                     <h3 class="h3 msg-sub-head"><a>
                             <?php _e('SEMINARIOS Y EVENTOS', 'inotheme') ?>
                         </a></h3>
                     <ul class="nav">
-                    <li><a
-                            href="/<?php _e('agenda', 'inotheme') ?>"><?php _e('Agenda', 'inotheme') ?></a>
-                    </li>                                       
-                    <li><a
-                            href="/<?php _e('visitantes-academicos', 'inotheme') ?>"><?php _e('Visitantes académicos', 'inotheme') ?></a>
-                    </li>
+                        <li><a href="/<?php _e('agenda', 'inotheme') ?>"><?php _e('Agenda', 'inotheme') ?></a>
+                        </li>
+                        <li><a
+                                href="/<?php _e('visitantes-academicos', 'inotheme') ?>"><?php _e('Visitantes académicos', 'inotheme') ?></a>
+                        </li>
                     </ul>
                 </div>
-                            
+
             </div>
         </nav>
     </div>

@@ -937,7 +937,7 @@ button.classic button.classic:after {
   width: 1130px;
   height: 106px;
   display: flex;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .header .header-inner .logo {
@@ -1441,6 +1441,7 @@ button.classic button.classic:after {
   font-weight: bold;
   color: white;
   z-index: 3;
+  text-align: center;
 }
 
 @media (min-width: 320px) {

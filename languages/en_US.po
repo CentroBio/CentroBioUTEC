@@ -276,3 +276,18 @@ msgstr "scholarships"
 #: inicio.php:9
 msgid "ÚLTIMAS"
 msgstr "RECENT"
+
+#. Texto navbar subtitulo ACERCA DE BIO
+#: inicio.php:9
+msgid "Conoce más de las autoridades, equipos y las instituciones con las cuales el Centro BIO viene desarrollando alianzas en investigación y desarrollo."
+msgstr "Learn more about the authorities, teams and institutions with which the Centro BIO has been developing alliances in research and development."
+
+#. Texto navbar subtitulo INVESTIGACION
+#: inicio.php:9
+msgid "El Centro BIO desarrolla sus lineas de investigación de manera multidisciplanaria integrando ramas de la ingeniería y la biomedicina. Entérate de esto y sus principales proyectos en esta sección."
+msgstr "The Center  BIO develops its lines of research in a multidisciplinary way, integrating branches of engineering and biomedicine. Find out more about this and its main projects here."
+
+#. Texto navbar subtitulo SEMINARIOS Y EVENTOS
+#: inicio.php:9
+msgid "A través del Centro BIO y la carrera de Bioingeniería de UTEC, se desarrollan todos los años una serie de eventos y capactaciones que promueven la investigación contando con la participación de excelentes profesionales nacionales e internacionales."
+msgstr "The Bio research center and the Faculty of Bioengineering at UTEC organize a series of events and master classes with the help of excellent national and international professionals .this events are held  every year and promote different research fields."
