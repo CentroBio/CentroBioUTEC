@@ -1,68 +1,41 @@
-<?php
-get_header();
-?>
+<?php /* Template Name: Blog */ ?>
 
-<div>
-    <main class="grid cx">
-    <div class="estrecho tac">
-                <h2 class="title"> BLOG</h2>
+<?php get_header(); ?>
+
+<div class="pagina-blog seccion-blog padding-vertical padding-lateral">
+    <h2 class="titulo-seccion"><?php _e( "Blog", "inotheme" ) ?></h2>
+    <div class="row contenedor-blogs">
+
+        <?php	
+
+            $args = array('posts_per_page' => '5');
+            $query = new WP_Query( $args );
+            
+        ?>
+
+        <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+        <div class="col-12 col-sm-12 col-md-10 col-lg-12 contenedor-blog">
+            <div class="contenido flex-center-start">
+                <img class="imagen-blog"
+                    src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 450, 350, true ) ); ?>"
+                    alt="<?php echo get_the_title();?>">
+                <div class="flex-column-center-start">
+                    <h3 class="titulo-regular titulo-blog"><?php echo get_the_title();?></h3>
+                    <p class="descripcion-blog texto-regular"><?php echo get_the_excerpt() ?></p>
+                    <div class="boton-ver-mas">
+                        <a href="<?php the_permalink(); ?>"><?php _e( "Ver más", "inotheme" ) ?></a>
+                    </div>
+                </div>
+
             </div>
-        <div class="container grid cx">
-
-            <?php
-            
-                $args = array('posts_per_page' => 6);
-                $query = new WP_Query( $args );
-
-                if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-
-                    <div class="entrada grid">
-                        <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id( $post->ID ), array( 450, 350, true ) ); ?>" alt="">
-                        <div class="w100">                
-                            <a href="<?php echo get_the_permalink(); ?>">
-                                <h3><?php the_title();?></h3>
-                            </a>
-                        <?php the_excerpt();?>           
-                        </div>
-                        <div class="w100 tar">
-                            <a href="<?php echo get_the_permalink(); ?>"><?php _e('VER MÁS...', 'inotheme') ?></a>
-                        </div>
-                    </div>
-
-                <?php endwhile; ?>
-
-            <?php endif; ?>
-
         </div>
 
-        <div class="container grid cx">
+        <?php endwhile;?>
+        <?php endif; ?>
 
-            <?php
-            
-                $args = array('posts_per_page' => 6, 'offset' => 6);
-                $query = new WP_Query( $args );
+    </div>
+</div>
 
-                if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-
-                    <div class="entrada grid">
-                        <div class="w100">                
-                            <a href="<?php echo get_the_permalink(); ?>">
-                                <h3><?php the_title();?></h3>
-                            </a>
-                        <?php the_excerpt();?>           
-                        </div>
-                        <div class="w100 tar">
-                            <a href="<?php echo get_the_permalink(); ?>"><?php _e('VER MÁS...', 'inotheme') ?></a>
-                        </div>
-                    </div>
-
-                <?php endwhile; ?>
-                
-            <?php endif; ?>
-
-        </div>
-    </main><!-- .site-main -->
-</div><!-- .content-area -->
-
-<?php
-get_footer();
+<?php get_footer(); ?>

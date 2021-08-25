@@ -114,6 +114,11 @@ function metabox_equipo() {
         'id' => $prefix . 'cargo',
         'type' => 'text',
     ) );
+    $cmb->add_field( array(
+        'name' => 'Email',
+        'id' => $prefix . 'email',
+        'type' => 'text',
+    ) );
 }
 
 add_action( 'cmb2_init', 'metabox_visitantes' );

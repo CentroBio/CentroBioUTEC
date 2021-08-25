@@ -1,33 +1,61 @@
-<?php
-/*Template Name: Alianzas*/
-get_header(); ?>
-<div class="main-container seccion-centrada">
+<?php /* Template Name: Alianzas */ ?>
+<?php get_header(); ?>
+<div class="pagina-alianzas">
+
+    <div class="padding-vertical padding-lateral">
+
+        <h2 class="titulo-seccion"><?php _e( "Alianzas", "inotheme" ) ?></h2>
+
         <?php while ( have_posts() ) : the_post(); ?>
-        <div class="w100 tac">
-            <h2 class="title"><?php echo get_the_title();?></h2>
-        </div>
-        <section class="estrecho grid cx">                    
-            <p><?php the_content() ?></p>
-            <div  class="w100 grid cx">
-             <?php	
-                $args = array(
-                    'post_type' => 'aliados-post',
-                    'posts_per_page' => '-1', 
-                );
-                $query = new WP_Query( $args );                
+
+        <?php 
+                $terms = get_terms('categoria-aliados', array('hide_empty' => false));
+                foreach ($terms as $key => $term) {      
+
+                    $args = array(
+                        'post_type' => 'aliados-post',
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'categoria-aliados',
+                                'field' => 'slug',
+                                'terms' => $term->slug,
+                            ),
+                        ),
+                    );
+                    $loop = new WP_Query( $args );
+
             ?>
-                <?php if ( $query->have_posts() ) : ?>
-                            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                    <div class="aliado grid cysb cx">
-                        <h3 class="w100"><?php echo get_post_meta( get_the_ID(), '_aliado_rama', 1 );?></h3>
-                        <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 250, 120, false ) ); ?>"
-                                alt="<?php echo get_the_title();?>">
-                    </div>
-                <?php endwhile;?>
-                        
-                <?php endif; ?>
+
+        <div class="contenedor-grupo-alianza">
+
+            <div class="titulo-seccion-alianza">
+                <h2 class="subtitulo-seccion"><?php echo $term->name;?></h2>
+            </div>
+
+            <div class="row flex-center-start">
+
+                <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+
+                <div class="columna-miembro-aliado col-12 col-sm-12 col-md-6 col-lg-4 flex-column-start-center">
+                    <a class="imagen-aliado"
+                        href="<?php echo get_post_meta( get_the_ID(), '_aliado_enlace_web', 1 ); ?>" target="_blank">
+                        <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 170, 170, true ) ); ?>"
+                            alt="<?php echo get_the_title();?>">
+                    </a>
+
                 </div>
-        </section>
-        <?php endwhile; // end of the loop. ?>
+
+                <?php endwhile; ?>
+
+            </div>
+
+        </div>
+
+        <?php } ?>
+
+        <?php endwhile; ?>
+
     </div>
-    <?php get_footer(); ?>
+
+</div>
+<?php get_footer(); ?>

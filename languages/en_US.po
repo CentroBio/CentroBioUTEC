@@ -12,282 +12,160 @@ msgstr ""
 "Language: en_US\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#. Text in echo
-#: header.php:96
-msgid "ACERCA"
-msgstr "ABOUT"
+# NOMBRES LINKS
 
-#. Text in echo
-#: header.php:166 header.php:310
-msgid "Agenda"
-msgstr "Agenda"
+# Inicio
+msgid "Inicio"
+msgstr "Home"
 
-#. Text in echo
-#: header.php:109 header.php:276
-msgid "Alianzas"
-msgstr "Partnerships"
-
-#. Text in echo
-#: header.php:189
-msgid "BIO"
-msgstr "BIO"
-
-#. Text in echo
-#: header.php:253
-msgid "BLOG"
-msgstr "BLOG"
-
-#. Text in echo
-#: single-investigadores-post.php:20
-msgid "Biografía"
-msgstr "Biography"
-
-#. Text in echo
-#: header.php:115 header.php:282
-msgid "Contacto"
-msgstr "Contact us"
-
-#. Text in echo
-#: header.php:188
-msgid "DE"
-msgstr " "
-
-#. Text in echo
-#: header.php:131
-msgid "EN"
-msgstr ""
-
-#. Text in echo
-#: header.php:161
-msgid "EVENTOS"
-msgstr "EVENTS"
-
-#. Text in echo
-#: single-investigadores-post.php:22
-msgid "Enseñanza"
-msgstr "Teaching experience"
-
-#. Text in echo
-#: header.php:106 header.php:273
-msgid "Equipo"
-msgstr "Staff"
-
-#. Text in echo
-#: header.php:82
-msgid "INICIO"
-msgstr "HOME"
-
-#. Text in echo
-#: header.php:238 header.php:130 header.php:289
-msgid "INVESTIGACIÓN"
-msgstr "RESEARCH"
-
-#. Text in echo
-#: single-investigadores-post.php:21
-msgid "Investigación"
-msgstr "Research"
-
-#. Text in echo
-#: header.php:112 header.php:279
-msgid "Investigadores"
-msgstr "Researchers"
-
-#. Text in echo
-#: header.php:140 header.php:296
-msgid "Laboratorios"
-msgstr "Laboratories"
-
-#. Text in echo
-#: header.php:137 header.php:293
-msgid "Líneas de investigación"
-msgstr "Research areas"
-
-#. Text in echo
-#: header.php:89 header.php:235 header.php:266
-msgid "NOSOTROS"
-msgstr "ABOUT US"
-
-#. Text in echo
-#: header.php:248 header.php:187 header.php:320
-msgid "NOTICIAS"
-msgstr "NEWS"
-
-#. Text in echo
-#: inicio.php:140
-msgid "NUESTROS ALIADOS"
-msgstr "PARTNERSHIPS"
-
-#. Text in echo
-#: header.php:103 header.php:270
+# Nosotros
 msgid "Nosotros"
 msgstr "About us"
 
-#. Text in echo
-#: header.php:194 header.php:324
-msgid "Noticias"
-msgstr "News"
+# Equipo
+msgid "Equipo"
+msgstr "Staff"
 
-#. Text in echo
-#: single.php:13
-msgid "Otras publicaciones"
-msgstr "More posts"
+# Alianzas
+msgid "Alianzas"
+msgstr "Partnerships"
 
-#. Text in echo
-#: header.php:143 header.php:299
-msgid "Proyectos"
-msgstr "Projects"
+# Investigadores
+msgid "Investigadores"
+msgstr "Research team"
 
-#. Text in echo
-#: single-investigadores-post.php:23
-msgid "Publicaciones"
-msgstr "Papers"
+# Contacto
+msgid "Contacto"
+msgstr "Contact"
 
-#. Text in echo
-#: header.php:159
-msgid "SEMINARIOS"
-msgstr "SEMINARS"
-
-#. Text in echo
-#: header.php:243 header.php:306 inicio.php:73
-msgid "SEMINARIOS Y EVENTOS"
-msgstr "SEMINARS AND EVENTS"
-
-#. Text in echo
-#: footer.php:21
-msgid "Todos los derechos reservados"
-msgstr "All rights reserved"
-
-#. Text in echo
-#: header.php:197 header.php:327
+# Trabaja con nosotros
 msgid "Trabaja con nosotros"
 msgstr "Work with us"
 
-#. Text in echo
-#: inicio.php:97 inicio.php:130
-msgid "VER MÁS"
-msgstr "SEE MORE"
+# Lineas de investigacion
+msgid "Líneas de investigación"
+msgstr "Research areas"
 
-#. Text in echo
-#: home.php:19
-msgid "VER MÁS..."
-msgstr "SEE MORE..."
+# Laboratorios
+msgid "Laboratorios"
+msgstr "Laboratories"
 
-#. Text in echo
-#: inicio.php:63 noticias.php:44
-msgid "VER NOTICIA"
-msgstr "MORE INFO"
+# Proyectos
+msgid "Proyectos"
+msgstr "Projects"
 
-#. Text in echo
-#: trabaja-con-nosotros.php:32
-msgid "VER OFERTA"
-msgstr "MORE INFO"
+# Agenda / Eventos
+msgid "Agenda"
+msgstr "Agenda"
 
-#. Text in echo
-#: header.php:318
-msgid "VOLVER"
-msgstr "GO BACK"
+# Noticias
+msgid "Noticias"
+msgstr "News"
 
-#. Text in echo
-#: eventos.php:39 proyectos.php:30
+# Blog
+msgid "Blog"
+msgstr "Blog"
+
+# TEXTOS INICIO / HOME
+
+# Intro No Bold 
+msgid "Transformamos la sociedad buscando soluciones en"
+msgstr "We transform society by seeking solutions in"
+
+# Intro Bold
+msgid " medicina, biología y accesibles con ingeniería"
+msgstr " medicine, biology and accessible engineering"
+
+# Subtitulo seccion ENLACES DE INTERES
+msgid "Enlaces de interés"
+msgstr "Links of interest"
+
+# Subtitulo seccion EVENTOS
+msgid "Eventos"
+msgstr "Events"
+
+# Subtitulo seccion ULTIMAS NOTICIAS
+msgid "Últimas noticias"
+msgstr "Last news"
+
+# Subtitulo seccion NUESTROS ALIADOS
+msgid "Nuestros aliados"
+msgstr "Partnerships"
+
+# TEXTOS FOOTER
+
+# Header NUESTRAS REDES
+msgid "Nuestras redes"
+msgstr "Social media"
+
+# Texto COPYRIGHT
+msgid "Copyright © 2021 Bio - UTEC. Todos los derechos reservados"
+msgstr "Copyright © 2021 Bio - UTEC. All rights reserved"
+
+
+# TEXTOS CONTACTO (PAGE)
+
+# Texto Intro
+msgid "Para recibir información adicional o tomar contacto con el centro BIO deje su información en el siguiente formulario:"
+msgstr "To receive more information or get in contact with us, leave your contact details in the following form:"
+
+# TEXTOS BOTONES
+
+# Enviar 
+msgid "Enviar"
+msgstr "Send"
+
+# Ver más 
 msgid "Ver más"
 msgstr "See more"
 
-#. Text in echo
-#: header.php:169 header.php:313
-msgid "Visitantes académicos"
-msgstr "Scholarships"
+# Ver oferta
+msgid "Ver oferta"
+msgstr "See offer"
 
-#. Text in echo
-#: header.php:160
-msgid "Y"
-msgstr ""
+# TEXTO LABORATORIOS
 
-#. Text in echo
-#: header.php:151 header.php:166 header.php:310
-msgid "agenda"
-msgstr "our-agenda"
+# Texto intro
+msgid "Los laboratorios de Bioingeniería son el lugar en donde los alumnos e investigadores pueden desarrollar prácticas y proyectos en las diversas áreas de la carrera, ya que se encuentran dotados con los equipos, materiales e instrumentos necesarios para llevar a cabo su aprendizaje."
+msgstr "Los laboratorios de Bioingeniería son el lugar en donde los alumnos e investigadores pueden desarrollar prácticas y proyectos en las diversas áreas de la carrera, ya que se encuentran dotados con los equipos, materiales e instrumentos necesarios para llevar a cabo su aprendizaje."
 
-#. Text in echo
-#: header.php:109 header.php:276
-msgid "alianzas"
-msgstr "partnerships"
 
-#. Text in echo
-#: header.php:205 header.php:252
-msgid "blog"
-msgstr "our-blog"
+# TEXTO TABS POST INVESTIGADOR
 
-#. Text in echo
-#: header.php:115 header.php:282
-msgid "contacto"
-msgstr "contact-us"
+# Biografia
+msgid "Biografía"
+msgstr "Biography"
 
-#. Text in echo
-#: header.php:106 header.php:273
-msgid "equipo"
-msgstr "staff"
+# Enseñanza
+msgid "Enseñanza"
+msgstr "Teaching experience"
 
-#. Text in echo
-#: header.php:72 header.php:80 header.php:228
-msgid "inicio"
-msgstr "home"
+# Publicaciones
+msgid "Publicaciones"
+msgstr "Papers"
 
-#. Text in echo
-#: header.php:112 header.php:279
-msgid "investigadores"
-msgstr "researchers"
+# TEXTO MENUS DROPDOWNS
 
-#. Text in echo
-#: header.php:140 header.php:296
-msgid "laboratorios"
-msgstr "laboratories"
+# Menu nosotros titulo
+msgid "Acerca de BIO"
+msgstr "About BIO"
 
-#. Text in echo
-#: header.php:122 header.php:137 header.php:293
-msgid "lineas-de-investigacion"
-msgstr "research-areas"
-
-#. Text in echo
-#: header.php:86 header.php:103 header.php:270
-msgid "nosotros"
-msgstr "about-us"
-
-#. Text in echo
-#: header.php:179 header.php:194 header.php:324
-msgid "noticias"
-msgstr "news"
-
-#. Text in echo
-#: header.php:143 header.php:299
-msgid "proyectos"
-msgstr "projects"
-
-#. Text in echo
-#: header.php:197 header.php:327
-msgid "trabaja-con-nosotros"
-msgstr "work-with-us"
-
-#. Text in echo
-#: header.php:169 header.php:313
-msgid "visitantes-academicos"
-msgstr "scholarships"
-
-#. Text in echo
-#: inicio.php:9
-msgid "ÚLTIMAS"
-msgstr "RECENT"
-
-#. Texto navbar subtitulo ACERCA DE BIO
-#: inicio.php:9
+# Menu nosotros subtitulo
 msgid "Conoce más de las autoridades, equipos y las instituciones con las cuales el Centro BIO viene desarrollando alianzas en investigación y desarrollo."
-msgstr "Learn more about the authorities, teams and institutions with which the Centro BIO has been developing alliances in research and development."
+msgstr "Learn more about the authorities, teams and institutions with whom Centro BIO has been developing alliances in research and development."
 
-#. Texto navbar subtitulo INVESTIGACION
-#: inicio.php:9
+# Menu investigacion titulo
+msgid "Investigación en BIO"
+msgstr "Research in BIO"
+
+# Menu investigacion subtitulo
 msgid "El Centro BIO desarrolla sus lineas de investigación de manera multidisciplanaria integrando ramas de la ingeniería y la biomedicina. Entérate de esto y sus principales proyectos en esta sección."
-msgstr "The Center  BIO develops its lines of research in a multidisciplinary way, integrating branches of engineering and biomedicine. Find out more about this and its main projects here."
+msgstr "Center BIO develops its lines of research in a multidisciplinary way, integrating branches of engineering and biomedicine. Find out more about this and its main projects here."
 
-#. Texto navbar subtitulo SEMINARIOS Y EVENTOS
-#: inicio.php:9
+# Menu eventos titulo
+msgid "Seminarios y eventos"
+msgstr "Seminars and events"
+
+# Menu eventos subtitulo
 msgid "A través del Centro BIO y la carrera de Bioingeniería de UTEC, se desarrollan todos los años una serie de eventos y capactaciones que promueven la investigación contando con la participación de excelentes profesionales nacionales e internacionales."
-msgstr "The Bio research center and the Faculty of Bioengineering at UTEC organize a series of events and master classes with the help of excellent national and international professionals .this events are held  every year and promote different research fields."
+msgstr "The Bio research center and the Faculty of Bioengineering at UTEC organize a series of events and master classes with the help of excellent national and international professionals. These events are held  every year and promote different research fields."

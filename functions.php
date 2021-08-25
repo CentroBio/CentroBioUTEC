@@ -12,9 +12,7 @@ add_theme_support( 'post-thumbnails' );
 
 function ofr_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri(),'',INOLOOP_VERSION );
-
     wp_enqueue_script( 'scripts', get_template_directory_uri().'/js/scripts.js',array('jquery') );
-
 }
 add_action( 'wp_enqueue_scripts', 'ofr_scripts' );
 
@@ -24,25 +22,39 @@ function styles_enqueue()
     wp_enqueue_style('slick_style');
     wp_register_style('slick_style_t', get_template_directory_uri() . '/css/slick-theme.css');
     wp_enqueue_style('slick_style_t');
+    wp_register_style('slick_nav_style', get_template_directory_uri() . '/css/slicknav.min.css');
+    wp_enqueue_style('slick_nav_style');
 }
 add_action('wp_enqueue_scripts', 'styles_enqueue');
+
 function scripts_enqueue()
 {
     wp_register_script('jquery', "//code.jquery.com/jquery-1.11.0.min.js");
     wp_enqueue_script('jquery');
-
     wp_register_script('jquery-min', "//code.jquery.com/jquery-migrate-1.2.1.min.js");
     wp_enqueue_script('jquery-min');
-
     wp_register_script('slick_script', get_template_directory_uri() . '/js/slick.min.js', array('jquery'),'1.1');
     wp_enqueue_script('slick_script');
+    wp_register_script('slick_nav_script', get_template_directory_uri() . '/js/jquery.slicknav.min.js', array('jquery'),'1.1');
+    wp_enqueue_script('slick_nav_script');
 }
 add_action('wp_enqueue_scripts', 'scripts_enqueue');
+
+function bootstrap_css() {
+	wp_enqueue_style( 'bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', array(), '4.1.3'); 
+}
+add_action( 'wp_enqueue_scripts', 'bootstrap_css');
+
+function bootstrap_js() {
+	wp_enqueue_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', array('jquery'), '4.1.3', true); 
+}
+add_action( 'wp_enqueue_scripts', 'bootstrap_js');
 
 require_once( get_template_directory() . '/inc/metaboxes.php' );
 require_once( get_template_directory() . '/inc/post-types.php' );
 
 add_action( 'after_setup_theme', 'language' );
+
 function language(){
   load_theme_textdomain( 'inotheme', get_template_directory() . '/languages' );
 }
@@ -51,6 +63,7 @@ function excerpt_length( $length ) {
     return 25;
 }
 add_filter('excerpt_length', 'excerpt_length');
+
 function blog_sidebar() {
     register_sidebar(
         array (
@@ -66,4 +79,13 @@ function blog_sidebar() {
 }
 add_action( 'widgets_init', 'blog_sidebar' );
 
+function register_menus() { 
+    register_nav_menus(
+        array(
+            'main-menu' => __('Main_menu'),
+            'main-menu-ingles' => __('Main_menu_ingles')
+        )
+    ); 
+} 
+add_action('init', 'register_menus');
 ?>

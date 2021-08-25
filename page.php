@@ -2,6 +2,7 @@
 
 
 get_header(); ?>
+
 <div class="main-container seccion-centrada">
     <div class="container-estrecho">
         <?php while ( have_posts() ) : the_post(); ?>

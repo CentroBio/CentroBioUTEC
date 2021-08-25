@@ -126,6 +126,21 @@ function menu_aliados() {
     );
   
     register_post_type( 'aliados-post', $args );
+
+    $args = array(
+      'hierarchical'      => true,
+      'show_ui'           => true,
+      'show_admin_column' => true,
+      'label'             => 'Categoria aliado',
+      'query_var'         => true,
+      'labels'      => array(
+                        'all_items'         => __('Categoria aliado'),
+                        ),
+      'rewrite'           => array( 'slug' => 'categoria-aliados' ),
+   );
+   register_taxonomy('categoria-aliados', array('aliados-post'), $args );
+
+   
 }
 add_action( 'init', 'menu_aliados' );
 

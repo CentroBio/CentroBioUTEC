@@ -1,68 +1,83 @@
-<?php
-get_header();
-?>
+<?php /* Template Name: Single Post Blog */ ?>
+<?php get_header(); ?>
 
-<div>
-    <main class="grid cx">
-    <?php if ( is_active_sidebar( 'Blog Sidebar' ) ) { ?>
-    <div id="sidebar">
-    <button id="toggleb" class="">
-        <i class="inoico icon-filtro"></i>    
-    </button>
-    <div id="custom-sidebar">
-    <h3><?php _e('Otras publicaciones', 'inotheme') ?></h3>
+<div class="pagina-single-post">
+
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+    <div class="padding-top-only padding-lateral flex-column-center-center">
+
+        <div class="subtitulo-fondo-imagen texto-color-principal titulo texto-centrado">
+            <?php echo get_the_title();?>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="imagen-post">
+            <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id( $post->ID ), array( 800, 500, true ) ); ?>"
+                alt="">
+        </div>
+    </div>
+
+
+    <div class="contenedor-post texto-regular padding-lateral">
+        <?php the_content();?>
+    </div>
+
+    <div class="contenedor-post-relacionados padding-vertical padding-lateral">
+
         <?php $pID = get_the_ID() ?>
-    <?php	
-                $args = array(
-                    'post_type' => 'post',
-                    'posts_per_page' => 5,
-                    'post__not_in' => array($pID),
-                );
-                $query = new WP_Query( $args );
+        <?php	
+        
+            $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 3,
+                'post__not_in' => array($pID),
+            );
+
+            $query = new WP_Query( $args );
                 
-                ?>
-                <?php if ( $query->have_posts() ) : ?>
-                            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                                <a class="post grid cx" href="<?php echo get_the_permalink(); ?>">
-                                    <div class="image grid cx cy">
-                                        <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 450, 350, true ) ); ?>"
-                                            alt="<?php echo get_the_title();?>">
-                                    </div>
-                                        <h4><?php echo get_the_title();?></h4>
-                                </a>
-                            <?php endwhile;?>
-                        
-                <?php endif; ?>
-        </div>          
+        ?>
+
+        <?php if ( $query->have_posts() ) : ?>
+
+        <div class="row flex-center-start">
+
+
+            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+            <div class="col-12 col-sm-12 col-md-10 col-lg-4 columna-post-relacionado">
+                <a class="flex-column-center-start" href="<?php echo get_the_permalink(); ?>">
+                    <div class="imagen-post-relacionado">
+                        <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 450, 350, true ) ); ?>"
+                            alt="<?php echo get_the_title();?>">
+                    </div>
+                    <h4 class="texto-post-relacionado"><?php echo get_the_title();?></h4>
+                </a>
+            </div>
+
+            <?php endwhile;?>
+
+        </div>
+        <?php endif; ?>
 
     </div>
-<?php } ?>        <div class="contenido-estrecho grid cx">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="entrada grid">
-                <div class="w100">
-                    <h2 class="title tac"><?php the_title();?></h2>
-                </div>
-                <div class="w100 tac">
-                <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id( $post->ID ), array( 800, 500, true ) ); ?>" alt="">
-                </div>
-                <div class="w100 content">                
-                <?php the_content();?>           
-                </div>
-                
-            </div>
-            <?php endwhile; ?>
-            <?php endif; ?>
-        </div>
-    </main><!-- .site-main -->
-</div><!-- .content-area -->
-<script >
-    jQuery(document).ready(function() {
+
+    <?php endwhile; ?>
+    <?php endif; ?>
+
+</div>
+
+<script>
+jQuery(document).ready(function() {
     var screen = jQuery(window);
     jQuery("#toggleb").on("click", function() {
         jQuery(this).toggleClass("active");
         jQuery(this).siblings("div").toggle();
     });
 });
-    </script>
+</script>
 <?php
 get_footer();

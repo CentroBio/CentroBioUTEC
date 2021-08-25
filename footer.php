@@ -1,32 +1,46 @@
+<div class="footer padding-vertical-footer padding-lateral">
 
-</div><!-- main-container -->
+    <div>
 
-<div class="footer" style="background-color:#f1f1f1;">
+        <div class="row contenedor-informacion">
 
-
-    <div class="seccion">
-        <div class="container">
-            <span>Jr. Medrano Silva 165 Barranco 15063</span>
-            <span><b>T.</b> (+511) 230 5000 anexo 4220</span>
-            <span><b>W.</b> https://centrobio.utec.edu.pe </span>
-            <span><b>C.</b> centrobio@utec.edu.pe</span>
-            <span>
-                <p><a href="https://www.facebook.com/utecuniversidad/?__tn__=%2Cd%2CP-R&eid=ARDc6S6pcbnD_P71PWHbDe38cyMpTklN7yGgGelU0upH__PbnTu90KHSAbnA-ajzme-RWCFmiyaex6QY"><i class="inoico icon-facebook"></i></a></p>
-                <p><a href="https://www.youtube.com/user/universidadutec"><i class="inoico icon-youtube"></i></a>
-                </p>
-            </span>
-        </div>
-        <div class="container" style="padding-bottom:24px;">
-            <span>
-                Copyright © 2021 Bio - UTEC. <?php _e('Todos los derechos reservados', 'inotheme') ?>
-            </span>
-            <div class="marca"><a href="https://www.inoloop.com/" target="_blank" data-toggle="tooltip"
-                    data-placement="left" title="" class="logo-foot-wrap"
-                    data-original-title="Desarrollado por Inoloop"><i class="inoico icon-inoloop"></i></a>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 informacion flex-column-center-start">
+                <img class="logo-footer"
+                    src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio_blanco.png">
+                <p class="texto-footer texto-blanco">www.centrobio.utec.edu.pe</p>
+                <p class="texto-footer texto-blanco">Jr. Medrano Silva 165 Barranco 15063</p>
             </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 informacion flex-column-start-start">
+                <h4 class="texto-footer-bold texto-blanco"><?php _e( "Contacto", "inotheme" ) ?></h4>
+                <p class="texto-footer texto-blanco">centrobio@utec.edu.pe</p>
+                <p class="texto-footer texto-blanco">(+511) 230 5000 anexo 4220</p>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 informacion flex-column-start-start">
+                <h4 class="texto-footer-bold texto-blanco"><?php _e( "Nuestras redes", "inotheme" ) ?></h4>
+                <div class="contenedor-redes-sociales">
+                    <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
+                        target="_blank">
+                        <img class="icono-red-social"
+                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/facebook_blanco.png">
+                    </a>
+                    <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
+                        target="_blank">
+                        <img class="icono-red-social"
+                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/youtube_blanco.png">
+                    </a>
+                </div>
+            </div>
+
         </div>
+
+        <div>
+            <p class="texto-copyright texto-blanco">
+                <?php _e( "Copyright © 2021 Bio - UTEC. Todos los derechos reservados", "inotheme" ) ?></p>
+        </div>
+
     </div>
-</div>
 
 </div>
 
@@ -35,17 +49,6 @@
 <script>
 (function($) {
     $(document).ready(function() {
-
-        $(".n-y-e .description button").click(function(){
-            $(this).parent(".description").toggleClass("fulltext");
-        });
-
-        $('.banner').slick({
-            autoplay: true,
-            arrows: false,
-            fade: true,
-            dots: false
-        });
 
         $('.slider-aliados').slick({
             autoplay: true,
@@ -56,8 +59,7 @@
             arrows: false,
             dots: true,
             appendDots: ".slider-aliados",
-            responsive: [
-                {
+            responsive: [{
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 3,
@@ -74,7 +76,7 @@
                     }
                 },
                 {
-                    breakpoint: 350,
+                    breakpoint: 100,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
@@ -85,7 +87,31 @@
 
         });
 
+        $(".carousel-enlaces").slick({
+            autoplay: false,
+            arrows: false,
+            dots: false,
+            draggable: false,
+            fade: true,
+            cssEase: 'linear'
+        });
+
+        $('.navbar-mobile').slicknav({
+            label: '',
+            duration: 350,
+            prependTo: ".navbar-desktop"
+        });
+
+        var enlaces = Array.from($(".elemento-enlace"));
+
+        enlaces.forEach((enlace, index) => {
+            enlace.addEventListener('mouseenter', () => {
+                $(".carousel-enlaces").slick('slickGoTo', index, false);
+            })
+        });
+
     });
+
 })(jQuery);
 </script>
 

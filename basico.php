@@ -11,9 +11,9 @@ get_header(); ?>
             </div>
             <div class="estrecho grid cx cy">
                 <div class="descripcion">
-                <?php echo get_the_content();?>
+                    <?php echo get_the_content();?>
                 </div>
-            
+
             </div>
         </div>
         <?php endwhile; // end of the loop. ?>

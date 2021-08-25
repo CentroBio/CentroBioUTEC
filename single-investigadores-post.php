@@ -1,82 +1,75 @@
-<?php
+<?php /* Template Name: Single Post Investigadores */ ?>
+<?php get_header(); ?>
 
+<div class="pagina-post-investigador">
 
-get_header(); ?>
-<div class="main-container seccion-centrada">
+    <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php while ( have_posts() ) : the_post(); ?>
-        <div class="w100 grid cx banner-inv">
-            <div class="grid cye">
-            <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 170, 170, true ) ); ?>"
+    <div class="datos-investigador padding-lateral padding-vertical flex-center-center">
+        <img class="imagen-investigador"
+            src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 170, 170, true ) ); ?>"
             alt="<?php echo get_the_title();?>">
-            </div>
-            <div class="info">
-            <div>
-                <h2 class="title"><?php echo get_the_title();?></h2><br>
-                <?php echo get_post_meta( get_the_ID(), '_investigador_titulo', 1 ); ?><br>
-                <?php echo get_post_meta( get_the_ID(), '_investigador_correo', 1 ); ?>
-            </div>
-            <div class="tab-menu">
-                <button 
-                        class="investigador-tab-btn active"
-                        data-tab="biografia">
-                    <?php _e('Biografía', 'inotheme') ?>
-                </button>
-                <button 
-                        class="investigador-tab-btn" 
-                        data-tab="investigacion">
-                    <?php _e('Líneas de investigación', 'inotheme') ?>
-                </button>
-                <button 
-                        class="investigador-tab-btn" 
-                        data-tab="ensenanza">
-                    <?php _e('Enseñanza', 'inotheme') ?>
-                </button>
-                <button 
-                        class="investigador-tab-btn" 
-                        data-tab="publicaciones">
-                    <?php _e('Publicaciones', 'inotheme') ?>
-                </button>
-
-            </div>
-            </div>
+        <div class="datos flex-column-center-start">
+            <h2 class="titulo-regular"><?php echo get_the_title();?></h2>
+            <h4 class="texto-detalle"><?php echo get_post_meta( get_the_ID(), '_investigador_titulo', 1 ); ?></h4>
+            <h4 class="texto-detalle"><?php echo get_post_meta( get_the_ID(), '_investigador_correo', 1 ); ?></h4>
         </div>
-        <div class="estrecho">
+    </div>
 
-        <div class="tab" id="biografia">
+    <div class="contenedor-tabs padding-lateral flex-center-center">
+
+        <div class="boton-tab boton-tab-activo tab" data-tab="biografia">
+            <span class="titulo-tab"><?php _e('Biografía', 'inotheme') ?></span>
+        </div>
+        <div class="boton-tab tab" data-tab="investigacion">
+            <span class="titulo-tab"><?php _e('Líneas de investigación', 'inotheme') ?></span>
+        </div>
+        <div class="boton-tab tab" data-tab="ensenanza">
+            <span class="titulo-tab"><?php _e('Enseñanza', 'inotheme') ?></span>
+        </div>
+        <div class="boton-tab tab" data-tab="publicaciones">
+            <span class="titulo-tab"><?php _e('Publicaciones', 'inotheme') ?></span>
+        </div>
+
+    </div>
+
+    <div id="biografia"
+        class="seccion-activa seccion-post-investigador seccion-biografia padding-vertical padding-lateral texto-regular">
         <?php echo get_post_meta( get_the_ID(), '_investigador_biografia', 1 ); ?>
-        </div>
-        <div class="tab" id="investigacion">
+    </div>
+
+    <div id="investigacion"
+        class="seccion-no-activa seccion-post-investigador seccion-lineas-investigacion padding-vertical padding-lateral texto-regular">
         <?php echo get_post_meta( get_the_ID(), '_investigador_investigacion', 1 ); ?>
-        </div>
-        <div class="tab" id="ensenanza">
+    </div>
+
+    <div id="ensenanza"
+        class="seccion-no-activa seccion-post-investigador seccion-ensenanza padding-vertical padding-lateral texto-regular">
         <?php echo get_post_meta( get_the_ID(), '_investigador_ensenanza', 1 ); ?>
-        </div>
-        <div class="tab" id="publicaciones">
+    </div>
+
+    <div id="publicaciones"
+        class="seccion-no-activa seccion-post-investigador seccion-publicaciones padding-vertical padding-lateral texto-regular">
         <?php echo get_post_meta( get_the_ID(), '_investigador_publicaciones', 1 ); ?>
-        </div>
-        </div>
-        <?php endwhile; // end of the loop. ?>
+    </div>
+
+    <?php endwhile; // end of the loop. ?>
+
     <script>
-        /*
-        function openTab(tabName) {
-            var i;
-            var x = document.getElementsByClassName("tab");
-            for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-            }
-            document.getElementById(tabName).style.display = "block";
-        }
-        */
-        jQuery(document).on("click",".investigador-tab-btn", function () {
-            //DISPLAYING TAB PANEL
-            var tabTarget = jQuery(this).attr('data-tab');
-            jQuery(".tab").hide();
-            jQuery("#"+tabTarget).show();
-            
-            //CHANGING TAB BUTTON STYLE
-            jQuery(".investigador-tab-btn").removeClass("active");
-            jQuery(this).addClass("active");
-        });
+    jQuery(document).on("click", ".tab", function() {
+
+        //DISPLAYING TAB PANEL
+        var tabTarget = jQuery(this).attr('data-tab');
+        jQuery(".seccion-post-investigador").hide();
+        jQuery("#" + tabTarget).show();
+
+        //CHANGING TAB BUTTON STYLE
+        jQuery(".boton-tab-activo").removeClass("boton-tab-activo");
+        jQuery(this).addClass("boton-tab-activo");
+
+    });
     </script>
-    <?php get_footer(); ?>
+
+</div>
+
+<?php get_footer(); ?>

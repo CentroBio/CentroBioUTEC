@@ -1,34 +1,55 @@
-<?php
-/*Template Name: Líneas de investigación*/
-get_header(); ?>
-<div class="main-container seccion-centrada">
-        <?php while ( have_posts() ) : the_post(); ?>
-        <div class="w100 tac">
-            <h2 class="title"><?php echo get_the_title();?></h2>
-        </div>
-        <section class="estrecho grid cx">                    
-            <p><?php the_content() ?></p>
-            <div  class="w100 grid cx">
-             <?php	
-                $args = array(
-                    'post_type' => 'lineasi-post',
-                );
-                $query = new WP_Query( $args );
-                
-                ?>
-                <?php if ( $query->have_posts() ) : ?>
-                            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                    <div class="linea grid cys cx lienzo">               
+<?php /*Template Name: Líneas de investigación*/ ?>
 
-                            <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 400, 300, true ) ); ?>"
-                                alt="<?php echo get_the_title();?>">
-                                <h3 class="w100 tac"><?php echo get_the_title();?></h3>
-                    </div>
-                            <?php endwhile;?>
+<?php get_header(); ?>
+
+<div class="pagina-lineas-investigacion">
+
+    <div class="padding-lateral padding-vertical">
+
+        <h2 class="titulo-seccion"><?php _e( "Líneas de investigación", "inotheme" ) ?></h2>
+
+        <?php while ( have_posts() ) : the_post(); ?>
+
+        <?php	
+
+                    $args = array('post_type' => 'lineasi-post');
+                    $query = new WP_Query( $args );
                         
-                <?php endif; ?>
+                ?>
+
+        <?php if ( $query->have_posts() ) : ?>
+
+        <div class="row flex-center-center">
+
+            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-center-center">
+
+                <div class="elemento-linea-investigacion">
+
+                    <div class="contenido">
+                        <img class="imagen-linea-investigacion"
+                            src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 400, 300, true ) ); ?>"
+                            alt="<?php echo get_the_title();?>">
+                        <h3 class="titulo-linea-investigacion titulo texto-regular texto-blanco">
+                            <?php echo get_the_title();?>
+                        </h3>
+                    </div>
+
                 </div>
-        </section>
+
+            </div>
+
+            <?php endwhile;?>
+
+        </div>
+
+        <?php endif; ?>
+
         <?php endwhile; // end of the loop. ?>
+
     </div>
-    <?php get_footer(); ?>
+
+</div>
+
+<?php get_footer(); ?>
