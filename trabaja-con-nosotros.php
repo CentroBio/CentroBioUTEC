@@ -5,7 +5,7 @@
 
     <div class="imagen-fondo-inicio">
         <div class="contenido">
-            <h1 class="titulo-fondo-imagen texto-blanco">Trabaja con nosotros</h1>
+            <h1 class="titulo-fondo-imagen texto-blanco"><?php _e( "Trabaja con nosotros", "inotheme" ) ?></h1>
         </div>
     </div>
 

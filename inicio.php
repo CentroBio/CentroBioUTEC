@@ -33,23 +33,23 @@
         <div class="carousel-enlaces">
             <div class="elemento-carousel-enlaces">
                 <img class="imagen-elemento-carousel-enlaces"
+                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/nosotros.jpg">
+            </div>
+            <div class="elemento-carousel-enlaces">
+                <img class="imagen-elemento-carousel-enlaces"
                     src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/investigadores.jpg">
             </div>
             <div class="elemento-carousel-enlaces">
                 <img class="imagen-elemento-carousel-enlaces"
-                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/laboratorios.jpg">
-            </div>
-            <div class="elemento-carousel-enlaces">
-                <img class="imagen-elemento-carousel-enlaces"
-                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/lineas.jpg">
-            </div>
-            <div class="elemento-carousel-enlaces">
-                <img class="imagen-elemento-carousel-enlaces"
-                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/nosotros.png">
+                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/lineas_de_investigacion.jpg">
             </div>
             <div class="elemento-carousel-enlaces">
                 <img class="imagen-elemento-carousel-enlaces"
                     src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/proyectos.jpg">
+            </div>
+            <div class="elemento-carousel-enlaces">
+                <img class="imagen-elemento-carousel-enlaces"
+                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/laboratorios.JPG">
             </div>
         </div>
         <div class="contenedor-enlaces">
@@ -94,7 +94,7 @@
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 contenedor-evento">
             <div class="contenido">
                 <img class="imagen-evento"
-                    src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 450, 350, true ) ); ?>"
+                    src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 450, 350, false ) ); ?>"
                     alt="<?php echo get_the_title();?>">
                 <h3 class="titulo-regular"><?php echo get_the_title();?></h3>
                 <p class="fecha-evento">Enero 2020</p>
@@ -131,7 +131,7 @@
         <div class="col-12 col-sm-12 col-md-6 col-lg-12 contenedor-noticia">
             <div class="contenido flex-center-start">
                 <img class="imagen-noticia"
-                    src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 450, 350, true ) ); ?>"
+                    src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 450, 350, false ) ); ?>"
                     alt="<?php echo get_the_title();?>">
                 <div class="flex-column-center-start">
                     <h3 class="titulo-regular"><?php echo get_the_title();?></h3>
