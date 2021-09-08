@@ -96,14 +96,33 @@
 
                 <?php } ?>
 
+                <?php if (get_locale(  ) == "es_ES") { ?>
+
+                <li class="menu-item menu-item-idioma menu-item-idioma-seleccionado">
+                    <a href="/"><?php _e( "Español", "inotheme" ) ?></a>
+                </li>
+
+                <li class="menu-item menu-item-idioma">
+                    <a href="/en/home"><?php _e( "Inglés", "inotheme" ) ?></a>
+                </li>
+                <?php } else { ?>
+
+                <li class="menu-item menu-item-idioma">
+                    <a href="/"><?php _e( "Español", "inotheme" ) ?></a>
+                </li>
+
+                <li class="menu-item menu-item-idioma menu-item-idioma-seleccionado">
+                    <a href="/en/home"><?php _e( "Inglés", "inotheme" ) ?></a>
+                </li>
+
+                <?php } ?>
+
             </ul>
+
+
+
+
         </div>
-
-
-        <!-- <ul style="height: 2rem" class="texto-regular">
-            <li><a style="color: black !important" class="esp" href="/">&nbsp;Español</a></li>
-            <li><a style="color: black !important" class="eng" href="/en/home">&nbsp;English</a></li>
-        </ul> -->
 
     </div>
 
@@ -135,9 +154,33 @@
 
                 <?php } ?>
 
+
+
             </li>
 
             <?php } ?>
+
+            <?php if (get_locale(  ) == "es_ES") { ?>
+
+            <li class="menu-item menu-item-idioma menu-item-idioma-seleccionado">
+                <a href="/"><?php _e( "Español", "inotheme" ) ?></a>
+            </li>
+
+            <li class="menu-item menu-item-idioma">
+                <a href="/en/home"><?php _e( "Inglés", "inotheme" ) ?></a>
+            </li>
+            <?php } else { ?>
+
+            <li class="menu-item menu-item-idioma">
+                <a href=" /"><?php _e( "Español", "inotheme" ) ?></a>
+            </li>
+
+            <li class="menu-item menu-item-idioma menu-item-idioma-seleccionado">
+                <a href="/en/home"><?php _e( "Inglés", "inotheme" ) ?></a>
+            </li>
+
+            <?php } ?>
+
 
         </ul>
     </div>

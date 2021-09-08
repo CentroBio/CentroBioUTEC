@@ -5,7 +5,7 @@
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <div class="padding-top-only padding-lateral flex-column-center-center">
+    <div class="padding-top-only padding-lateral-post-contenido flex-column-center-center">
 
         <div class="subtitulo-fondo-imagen texto-color-principal titulo texto-centrado">
             <?php echo get_the_title();?>
@@ -22,7 +22,7 @@
     </div>
 
 
-    <div class="contenedor-post texto-regular padding-lateral">
+    <div class="contenedor-post texto-regular padding-lateral-post-contenido">
         <?php the_content();?>
         <h3 class="subtitulo-fondo-imagen texto-color-principal titulo texto-centrado">
             <?php _e( "Otros posts", "inotheme" ) ?>

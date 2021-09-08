@@ -82,6 +82,14 @@ msgstr "Projects"
 msgid "/proyectos"
 msgstr "/projects"
 
+# Idioma Español
+msgid "Español"
+msgstr "Spanish"
+
+# Idioma Ingles
+msgid "Inglés"
+msgstr "English"
+
 # Texto volver a Proyectos
 msgid "Volver a proyectos"
 msgstr "Return to projects"

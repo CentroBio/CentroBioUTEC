@@ -5,7 +5,7 @@
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <div class="padding-vertical padding-lateral">
+    <div class="padding-vertical padding-lateral-post-contenido">
 
         <div class="subtitulo-fondo-imagen texto-color-principal titulo texto-centrado">
             <?php echo get_the_title();?>
