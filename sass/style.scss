@@ -60,37 +60,37 @@ $colorFondoOfertaLaboral: #fcfbf8;
 // FUENTES //
 @font-face {
   font-family: FiraBold;
-  src: url("/wp-content/themes/BioUTEC/fonts/centroBio/FiraSans-Bold.ttf");
+  src: url("/wp-content/themes/CentroBioUTEC/fonts/centroBio/FiraSans-Bold.ttf");
 }
 
 @font-face {
   font-family: FiraLight;
-  src: url("/wp-content/themes/BioUTEC/fonts/centroBio/FiraSans-Light.ttf");
+  src: url("/wp-content/themes/CentroBioUTEC/fonts/centroBio/FiraSans-Light.ttf");
 }
 
 @font-face {
   font-family: MerriweatherSansLightItalic;
-  src: url("/wp-content/themes/BioUTEC/fonts/centroBio/MerriweatherSans-LightItalic.ttf");
+  src: url("/wp-content/themes/CentroBioUTEC/fonts/centroBio/MerriweatherSans-LightItalic.ttf");
 }
 
 @font-face {
   font-family: MerriweatherSans;
-  src: url("/wp-content/themes/BioUTEC/fonts/centroBio/MerriweatherSans-Light.ttf");
+  src: url("/wp-content/themes/CentroBioUTEC/fonts/centroBio/MerriweatherSans-Light.ttf");
 }
 
 @font-face {
   font-family: MerriweatherSansBold;
-  src: url("/wp-content/themes/BioUTEC/fonts/centroBio/MerriweatherSans-Bold.ttf");
+  src: url("/wp-content/themes/CentroBioUTEC/fonts/centroBio/MerriweatherSans-Bold.ttf");
 }
 
 @font-face {
   font-family: NunitoSans;
-  src: url("/wp-content/themes/BioUTEC/fonts/centroBio/NunitoSans-Light.ttf");
+  src: url("/wp-content/themes/CentroBioUTEC/fonts/centroBio/NunitoSans-Light.ttf");
 }
 
 @font-face {
   font-family: NunitoSansBold;
-  src: url("/wp-content/themes/BioUTEC/fonts/centroBio/NunitoSans-Bold.ttf");
+  src: url("/wp-content/themes/CentroBioUTEC/fonts/centroBio/NunitoSans-Bold.ttf");
 }
 
 // GLOBALS //
@@ -1066,7 +1066,7 @@ strong {
 // UI REUSABLE //
 
 .boton-ver-mas {
-  color: white;
+  color: white !important;
   cursor: pointer;
   display: inline-flex;
   font-family: MerriweatherSansBold;
@@ -1363,21 +1363,23 @@ strong {
   }
 
   @media (min-width: 1024px) {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-top: 7.25rem;
+    padding-bottom: 7.25rem;
   }
 
   @media (min-width: 1200px) {
-    padding-top: 11rem;
-    padding-bottom: 11rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   @media (min-width: 1440px) {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   @media (min-width: 1920px) {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   @media (min-width: 2560px) {
@@ -1554,7 +1556,7 @@ strong {
       width: 75%;
 
       .titulo-fondo-imagen {
-        width: 100%;
+        width: 75%;
         margin-bottom: 1rem;
         line-height: 1.1;
       }
@@ -1571,7 +1573,7 @@ strong {
       width: 65%;
 
       .titulo-fondo-imagen {
-        width: 100%;
+        width: 75%;
         margin-bottom: 1rem;
         line-height: 1.1;
       }
@@ -1588,7 +1590,7 @@ strong {
       width: 65%;
 
       .titulo-fondo-imagen {
-        width: 100%;
+        width: 70%;
         margin-bottom: 1rem;
         line-height: 1.1;
       }
@@ -1605,7 +1607,7 @@ strong {
       width: 65%;
 
       .titulo-fondo-imagen {
-        width: 100%;
+        width: 60%;
         margin-bottom: 1rem;
         line-height: 1.1;
       }
@@ -1622,7 +1624,7 @@ strong {
       width: 65%;
 
       .titulo-fondo-imagen {
-        width: 80%;
+        width: 60%;
         margin-bottom: 2rem;
         line-height: 1.1;
       }
@@ -1639,7 +1641,7 @@ strong {
       width: 60%;
 
       .titulo-fondo-imagen {
-        width: 80%;
+        width: 60%;
         margin-bottom: 2rem;
         line-height: 1.1;
       }
@@ -2406,7 +2408,7 @@ strong {
 
 .imagen-fondo-inicio {
   @include imagen-fondo();
-  background-image: url("/wp-content/themes/BioUTEC/img/imagenes_fondo/Inicio.png");
+  background-image: url("/wp-content/themes/CentroBioUTEC/img/imagenes_fondo/Inicio.png");
 }
 
 .contenedor-carousel-enlaces {
@@ -2415,12 +2417,12 @@ strong {
 
   @media (min-width: 320px) {
     width: 100%;
-    height: 40vh;
+    height: 100vh;
   }
 
   @media (min-width: 576px) {
     width: 100%;
-    height: 60vh;
+    height: 100vh;
   }
 
   @media (min-width: 768px) {
@@ -2431,17 +2433,17 @@ strong {
 
   @media (min-width: 1200px) {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
   }
 
   @media (min-width: 1440px) {
-    width: 80%;
-    height: 80vh;
+    width: 100%;
+    height: 100vh;
   }
 
   @media (min-width: 1920px) {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
   }
 
   @media (min-width: 2560px) {
@@ -2471,15 +2473,15 @@ strong {
         position: relative;
         object-fit: cover;
         width: 100%;
-        height: 80vh;
+        height: 100vh;
       }
 
       @media (min-width: 320px) {
-        height: 40vh;
+        height: 100vh;
       }
 
       @media (min-width: 576px) {
-        height: 60vh;
+        height: 100vh;
       }
 
       @media (min-width: 768px) {
@@ -2489,13 +2491,15 @@ strong {
       }
 
       @media (min-width: 1200px) {
-        height: 80vh;
+        height: 100vh;
       }
 
       @media (min-width: 1440px) {
+        height: 100vh;
       }
 
       @media (min-width: 1920px) {
+        height: 100vh;
       }
 
       @media (min-width: 2560px) {
@@ -2742,6 +2746,7 @@ strong {
       justify-content: center;
       .contenido {
         @media (min-width: 320px) {
+          margin-bottom: 1.25rem;
         }
 
         @media (min-width: 576px) {
@@ -2751,6 +2756,7 @@ strong {
         }
 
         @media (min-width: 1024px) {
+          margin-bottom: 2rem;
         }
 
         @media (min-width: 1200px) {
@@ -4733,7 +4739,7 @@ strong {
 .pagina-ofertas-laborales {
   .imagen-fondo-inicio {
     @include imagen-fondo();
-    background-image: url("/wp-content/themes/BioUTEC/img/imagenes_fondo/Trabaja_con_nosotros.png");
+    background-image: url("/wp-content/themes/CentroBioUTEC/img/imagenes_fondo/Trabaja_con_nosotros.png");
   }
 
   .contenedor-oferta-laboral {
@@ -5252,6 +5258,7 @@ strong {
       justify-content: center;
       .contenido {
         @media (min-width: 320px) {
+          margin-bottom: 5rem;
         }
 
         @media (min-width: 576px) {
@@ -5261,6 +5268,7 @@ strong {
         }
 
         @media (min-width: 1024px) {
+          margin-bottom: 6rem;
         }
 
         @media (min-width: 1200px) {
@@ -5764,16 +5772,41 @@ strong {
 
     @media (min-width: 2560px) {
     }
+
+    &:last-of-type {
+      @media (min-width: 320px) {
+      }
+
+      @media (min-width: 576px) {
+      }
+
+      @media (min-width: 768px) {
+      }
+
+      @media (min-width: 1024px) {
+      }
+
+      @media (min-width: 1200px) {
+      }
+
+      @media (min-width: 1440px) {
+        margin: 10rem 0 -6rem;
+      }
+
+      @media (min-width: 1920px) {
+      }
+
+      @media (min-width: 2560px) {
+      }
+    }
   }
 
   a {
-    color: $colorPrincipal !important;
+    color: $colorPrincipal;
     font-family: NunitoSansBold;
   }
 
   .imagen-post {
-    width: 100%;
-
     @media (min-width: 320px) {
       margin-bottom: 6rem;
     }
@@ -5797,10 +5830,6 @@ strong {
     }
 
     @media (min-width: 2560px) {
-    }
-
-    img {
-      width: 100%;
     }
   }
 
@@ -6089,10 +6118,37 @@ strong {
 
     @media (min-width: 2560px) {
     }
+
+    &:last-of-type {
+      @media (min-width: 320px) {
+      }
+
+      @media (min-width: 576px) {
+      }
+
+      @media (min-width: 768px) {
+      }
+
+      @media (min-width: 1024px) {
+      }
+
+      @media (min-width: 1200px) {
+      }
+
+      @media (min-width: 1440px) {
+        margin: 10rem 0 -6rem;
+      }
+
+      @media (min-width: 1920px) {
+      }
+
+      @media (min-width: 2560px) {
+      }
+    }
   }
 
   a {
-    color: $colorPrincipal !important;
+    color: $colorPrincipal;
     font-family: NunitoSansBold;
   }
 
@@ -6122,10 +6178,6 @@ strong {
     }
 
     @media (min-width: 2560px) {
-    }
-
-    img {
-      width: 100%;
     }
   }
 
@@ -6341,6 +6393,34 @@ strong {
         }
       }
     }
+    h3 {
+      &:last-of-type {
+        @media (min-width: 320px) {
+        }
+
+        @media (min-width: 576px) {
+        }
+
+        @media (min-width: 768px) {
+        }
+
+        @media (min-width: 1024px) {
+        }
+
+        @media (min-width: 1200px) {
+        }
+
+        @media (min-width: 1440px) {
+          margin: 8rem 0 2rem;
+        }
+
+        @media (min-width: 1920px) {
+        }
+
+        @media (min-width: 2560px) {
+        }
+      }
+    }
   }
   h3 {
     color: $colorPrincipal;
@@ -6518,6 +6598,239 @@ strong {
     }
 
     @media (min-width: 2560px) {
+    }
+  }
+}
+
+// PAGINA SINGLE POST LABORATORIO //
+
+.pagina-single-laboratorio {
+  h3 {
+    @media (min-width: 320px) {
+      margin-top: 5.5rem;
+    }
+
+    @media (min-width: 576px) {
+      margin-top: 7.5rem;
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 7.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      margin-top: 10.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-top: 10.5rem;
+    }
+
+    @media (min-width: 1440px) {
+      margin-top: 10.5rem;
+    }
+
+    @media (min-width: 1920px) {
+      margin-top: 20.5rem;
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  .contenedor-imagen {
+    @media (min-width: 320px) {
+      margin-bottom: 4rem;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &:first-of-type {
+        margin-top: 2rem;
+      }
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 2rem;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 1024px) {
+      margin-top: 3.5rem !important;
+    }
+
+    @media (min-width: 1200px) {
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 1440px) {
+    }
+
+    @media (min-width: 1920px) {
+      margin: 10rem 0 6rem !important;
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+  img {
+    width: 100%;
+
+    @media (min-width: 320px) {
+    }
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+    }
+
+    @media (min-width: 1200px) {
+    }
+
+    @media (min-width: 1440px) {
+    }
+
+    @media (min-width: 1920px) {
+    }
+
+    @media (min-width: 2560px) {
+    }
+  }
+}
+
+// PAGINATION //
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  background-color: $colorScrollbar;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 12px;
+  padding: 0.75rem;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+  background-color: $colorPrincipal;
+}
+
+.navigation {
+  margin: 0 auto;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      @media (min-width: 320px) {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 2rem;
+      }
+
+      @media (min-width: 576px) {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 2rem;
+      }
+
+      @media (min-width: 1024px) {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 2rem;
+      }
+
+      @media (min-width: 1200px) {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2rem;
+      }
+
+      @media (min-width: 1440px) {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2rem;
+      }
+
+      @media (min-width: 1920px) {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 2rem;
+      }
+
+      @media (min-width: 2560px) {
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50% !important;
+        font-family: NunitoSansBold;
+
+        @media (min-width: 320px) {
+          font-size: 1.35rem;
+        }
+
+        @media (min-width: 576px) {
+          font-size: 1.35rem;
+        }
+
+        @media (min-width: 768px) {
+          font-size: 1.3rem;
+        }
+
+        @media (min-width: 1024px) {
+          font-size: 1.35rem;
+        }
+
+        @media (min-width: 1200px) {
+          font-size: 1.65rem;
+        }
+
+        @media (min-width: 1440px) {
+          font-size: 1.65rem;
+        }
+
+        @media (min-width: 1920px) {
+          font-size: 2.25rem;
+        }
+
+        @media (min-width: 2560px) {
+        }
+      }
     }
   }
 }

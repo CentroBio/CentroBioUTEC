@@ -8,7 +8,8 @@
 
         <?php	
 
-            $args = array('posts_per_page' => '5');
+            $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+            $args = array('posts_per_page' => '5', 'paged' => $paged);
             $query = new WP_Query( $args );
             
         ?>
@@ -32,8 +33,14 @@
             </div>
         </div>
 
+        <!-- <?php the_posts_pagination(); ?> -->
+
+
         <?php endwhile;?>
         <?php endif; ?>
+
+        <?php wpbeginner_numeric_posts_nav(); ?>
+
 
     </div>
 </div>

@@ -225,15 +225,16 @@ function metabox_laboratorios() {
         'priority'     => 'default',
     ) );
     $cmb->add_field( array(
-        'name' => 'Link página web',
-        'id' => $prefix . 'link_web',
-        'type'    => 'text',
+        'name' => 'Descripción',
+        'id' => $prefix . 'descripcion',
+        'type'    => 'wysiwyg',
     ) );
     $cmb->add_field( array(
-        'name' => 'Texto descriptivo',
-        'id' => $prefix . 'texto_descriptivo',
-        'type'    => 'text',
+        'name' => 'Imagenes',
+        'id' => $prefix . 'imagenes',
+        'type'    => 'file_list',
     ) );
+    
 }
 
 ?>

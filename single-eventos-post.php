@@ -1,7 +1,7 @@
-<?php /* Template Name: Single Post Noticia */ ?>
+<?php /* Template Name: Single Post Eventos */ ?>
 <?php get_header(); ?>
 
-<div class="pagina-single-noticia">
+<div class="pagina-single-post">
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -11,19 +11,21 @@
             <?php echo get_the_title();?>
         </div>
 
+        <br>
+        <br>
+        <br>
+
         <div class="imagen-post texto-centrado">
             <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id( $post->ID ), array( 800, 500, true ) ); ?>"
                 alt="">
         </div>
-
     </div>
 
 
     <div class="contenedor-post texto-regular padding-lateral">
         <?php the_content();?>
-        <h3></h3>
         <h3 class="subtitulo-fondo-imagen texto-color-principal titulo texto-centrado">
-            <?php _e( "Otras noticias", "inotheme" ) ?>
+            <?php _e( "Otros eventos", "inotheme" ) ?>
         </h3>
     </div>
 
@@ -33,7 +35,7 @@
         <?php	
         
             $args = array(
-                'post_type' => 'noticias-post',
+                'post_type' => 'eventos-post',
                 'posts_per_page' => 3,
                 'post__not_in' => array($pID),
             );
@@ -65,7 +67,7 @@
 
         <div class="padding-top-only texto-centrado">
             <div class="boton-ver-mas texto-blanco">
-                <a href="<?php _e( "/noticias", "inotheme" )?>"><?php _e( "Volver a noticias", "inotheme" ) ?></a>
+                <a href="<?php _e( "/agenda", "inotheme" )?>"><?php _e( "Volver a eventos", "inotheme" ) ?></a>
             </div>
         </div>
 

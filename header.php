@@ -149,7 +149,10 @@
 
         foreach($navbar_items as $main_menu) {
 
-            if ($main_menu->child_items) {
+            $childList = $main_menu->child_items;
+            $childArray = array($childList);
+            
+            if (is_countable($childList) && count($childList) > 1) {
                 
     ?>
 
@@ -158,8 +161,10 @@
         <div
             class="flex-column-center-start descripcion-submenu descripcion-submenu-<?php echo $main_menu->ID?> descripcion-submenu-<?php echo $main_menu->post_name?>">
 
+            <!-- <?php var_dump($main_menu->ID) ?> -->
+
             <!-- MENU NOSOTROS -->
-            <?php if ($main_menu -> ID == 533 || $main_menu -> ID == 550) { ?>
+            <?php if ($main_menu -> ID == 892 || $main_menu -> ID == 909) { ?>
 
             <h2 class="titulo-dropdown-submenu"><?php _e( "Acerca de BIO", "inotheme" ) ?></h2>
             <p class="subtitulo-dropdown-submenu">
@@ -167,7 +172,7 @@
             </p>
 
             <!-- MENU INVESTIGACION -->
-            <?php } else if ($main_menu -> ID == 567 || $main_menu -> ID == 561) { ?>
+            <?php } else if ($main_menu -> ID == 894 || $main_menu -> ID == 913) { ?>
 
             <h2 class="titulo-dropdown-submenu"><?php _e( "Investigación en BIO", "inotheme" ) ?></h2>
             <p class="subtitulo-dropdown-submenu">
@@ -175,7 +180,7 @@
             </p>
 
             <!-- MENU SEMINARIOS Y EVENTOS -->
-            <?php } else if ($main_menu -> ID == 574 || $main_menu -> ID == 563) { ?>
+            <?php } else if ($main_menu -> ID == 906 || $main_menu -> ID == 910) { ?>
 
             <h2 class="titulo-dropdown-submenu"><?php _e( "Seminarios y eventos", "inotheme" ) ?></h2>
             <p class="subtitulo-dropdown-submenu">

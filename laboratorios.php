@@ -47,11 +47,7 @@
                             <?php echo get_the_title();?>
                         </h3>
 
-                        <a class="enlace-laboratorio"
-                            href="<?php echo get_post_meta( get_the_ID(), '_laboratorios_link_web', 1 ); ?>"
-                            target="_blank">
-
-                        </a>
+                        <a class="enlace-laboratorio" href="<?php the_permalink(); ?>" target="_blank"></a>
 
                     </div>
 

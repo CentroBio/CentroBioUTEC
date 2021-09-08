@@ -14,6 +14,14 @@ msgstr ""
 
 # NOMBRES LINKS
 
+# Inicio Imagen de fondo titulo
+msgid "Centro BIO UTEC"
+msgstr "Centro BIO UTEC"
+
+# Inicio Imagen de fondo subtitulo
+msgid "Investigación en bioingeniería"
+msgstr "Bioengineering research"
+
 # Inicio
 msgid "Inicio"
 msgstr "Home"
@@ -21,6 +29,10 @@ msgstr "Home"
 # Nosotros
 msgid "Nosotros"
 msgstr "About us"
+
+# Enlace Nosotros
+msgid "/nosotros"
+msgstr "/about-us"
 
 # Equipo
 msgid "Equipo"
@@ -34,6 +46,10 @@ msgstr "Partnerships"
 msgid "Investigadores"
 msgstr "Research team"
 
+# Enlace Investigadores
+msgid "/investigadores"
+msgstr "/researchers"
+
 # Contacto
 msgid "Contacto"
 msgstr "Contact"
@@ -46,25 +62,81 @@ msgstr "Work with us"
 msgid "Líneas de investigación"
 msgstr "Research areas"
 
+# Enlace Lineas de investigacion
+msgid "/lineas-de-investigacion"
+msgstr "/research-areas"
+
 # Laboratorios
 msgid "Laboratorios"
 msgstr "Laboratories"
+
+# Enlace Laboratorios
+msgid "/laboratorios"
+msgstr "/laboratories"
 
 # Proyectos
 msgid "Proyectos"
 msgstr "Projects"
 
+# Enlace Proyectos
+msgid "/proyectos"
+msgstr "/projects"
+
+# Texto volver a Proyectos
+msgid "Volver a proyectos"
+msgstr "Return to projects"
+
+# Otros proyectos
+msgid "Otros proyectos"
+msgstr "More projects"
+
 # Agenda / Eventos
 msgid "Agenda"
 msgstr "Agenda"
+
+# Enlace Eventos
+msgid "/agenda"
+msgstr "/our-agenda"
+
+# Texto volver a Eventos
+msgid "Volver a eventos"
+msgstr "Return to events"
+
+# Otros eventos
+msgid "Otros eventos"
+msgstr "More events"
 
 # Noticias
 msgid "Noticias"
 msgstr "News"
 
+# Enlace Noticias
+msgid "/noticias"
+msgstr "/news"
+
+# Texto volver a Noticias
+msgid "Volver a noticias"
+msgstr "Return to news"
+
+# Otras noticias
+msgid "Otras noticias"
+msgstr "More news"
+
 # Blog
 msgid "Blog"
 msgstr "Blog"
+
+# Enlace Blog
+msgid "/blog"
+msgstr "/our-blog"
+
+# Texto volver a Posts
+msgid "Volver a posts"
+msgstr "Return to posts"
+
+# Otros posts
+msgid "Otros posts"
+msgstr "More posts"
 
 # TEXTOS INICIO / HOME
 
@@ -73,8 +145,8 @@ msgid "Transformamos la sociedad buscando soluciones en"
 msgstr "We transform society by seeking solutions in"
 
 # Intro Bold
-msgid " medicina, biología y accesibles con ingeniería"
-msgstr " medicine, biology and accessible engineering"
+msgid " medicina y biología a través de la ingeniería"
+msgstr " medicine and biology through engineering"
 
 # Subtitulo seccion ENLACES DE INTERES
 msgid "Enlaces de interés"
@@ -97,6 +169,10 @@ msgstr "Partnerships"
 # Header NUESTRAS REDES
 msgid "Nuestras redes"
 msgstr "Social media"
+
+# Header CONVERSATORIOS
+msgid "Conversatorios"
+msgstr "Conferences"
 
 # Texto COPYRIGHT
 msgid "Copyright © 2021 Bio - UTEC. Todos los derechos reservados"
