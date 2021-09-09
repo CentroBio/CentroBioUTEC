@@ -5,8 +5,21 @@
         <div class="row contenedor-informacion">
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 informacion flex-column-center-start">
-                <img class="logo-footer"
-                    src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio_blanco.png">
+
+                <?php if (get_locale(  ) == "es_ES") { ?>
+                <a href="/">
+                    <img class="logo-footer"
+                        src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio_blanco.png"
+                        alt="logo-centro-bio-footer">
+                </a>
+                <?php } else { ?>
+                <a href="/en/home">
+                    <img class="logo-footer"
+                        src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio_blanco.png"
+                        alt="logo-centro-bio-footer">
+                </a>
+                <?php } ?>
+
                 <p class="texto-footer texto-blanco">www.centrobio.utec.edu.pe</p>
                 <p class="texto-footer texto-blanco">Jr. Medrano Silva 165 Barranco 15063</p>
             </div>

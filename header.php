@@ -26,9 +26,15 @@
 
     <div class="navbar-desktop padding-lateral flex-between-center">
 
-        <div class="logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio.png">
-        </div>
+        <?php if (get_locale(  ) == "es_ES") { ?>
+        <a href="/" class="logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio.png" alt="logo-centro-bio">
+        </a>
+        <?php } else { ?>
+        <a href="/en/home" class="logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio.png" alt="logo-centro-bio">
+        </a>
+        <?php } ?>
 
         <?php 
 
