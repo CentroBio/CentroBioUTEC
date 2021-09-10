@@ -237,4 +237,21 @@ function metabox_laboratorios() {
     
 }
 
+add_action( 'cmb2_init', 'metabox_eventos' );
+
+function metabox_eventos() {
+    $prefix = '_eventos_';
+    $cmb = new_cmb2_box( array(
+        'id'           => $prefix . 'eventos',
+        'title'        => 'Fecha',
+        'object_types' => array( 'eventos-post' ),
+        'context'      => 'normal',
+        'priority'     => 'default',
+    ) );
+    $cmb->add_field( array(
+        'id' => $prefix . 'fecha',
+        'type'    => 'text',
+    ) );
+}
+
 ?>

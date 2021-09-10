@@ -24,7 +24,6 @@
                     alt="<?php echo get_the_title();?>">
                 <div class="flex-column-center-start">
                     <h3 class="titulo-regular"><?php echo get_the_title();?></h3>
-                    <p class="fecha-evento fecha-noticia">Enero 2020</p>
                     <p class="descripcion-noticia texto-regular"><?php echo get_the_excerpt() ?></p>
                     <div class="boton-ver-mas">
                         <a href="<?php the_permalink(); ?>"><?php _e( "Ver más", "inotheme" ) ?></a>

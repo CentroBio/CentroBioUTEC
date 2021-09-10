@@ -97,7 +97,7 @@
                     src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 450, 350, false ) ); ?>"
                     alt="<?php echo get_the_title();?>">
                 <h3 class="titulo-regular"><?php echo get_the_title();?></h3>
-                <p class="fecha-evento">Enero 2020</p>
+                <p class="fecha-evento"><?php echo get_post_meta( get_the_ID(), '_eventos_fecha', 1 ); ?></p>
                 <div class="boton-ver-mas">
                     <a href="<?php the_permalink(); ?>"><?php _e( "Ver más", "inotheme" ) ?></a>
                 </div>
@@ -135,7 +135,6 @@
                     alt="<?php echo get_the_title();?>">
                 <div class="flex-column-center-start">
                     <h3 class="titulo-regular"><?php echo get_the_title();?></h3>
-                    <p class="fecha-evento fecha-noticia">Enero 2020</p>
                     <p class="descripcion-noticia texto-regular"><?php echo get_the_excerpt() ?></p>
                     <div class="boton-ver-mas">
                         <a href="<?php the_permalink(); ?>"><?php _e( "Ver más", "inotheme" ) ?></a>

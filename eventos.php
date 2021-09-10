@@ -29,7 +29,8 @@
                         src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 450, 350, true ) ); ?>"
                         alt="<?php echo get_the_title();?>">
                     <h3 class="titulo-regular"><?php echo get_the_title();?></h3>
-                    <p class="fecha-evento">Enero 2020</p>
+                    <p class="fecha-evento">
+                        <?php echo get_post_meta( get_the_ID(), '_eventos_fecha', 1 ); ?></p>
                     <div class="boton-ver-mas">
                         <a href="<?php the_permalink(); ?>"><?php _e( "Ver más", "inotheme" ) ?></a>
                     </div>
