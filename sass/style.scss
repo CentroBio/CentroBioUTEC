@@ -4156,28 +4156,31 @@ p {
 .pagina-alianzas {
   .contenedor-grupo-alianza {
     @media (min-width: 320px) {
+      padding-top: 4rem;
     }
 
     @media (min-width: 576px) {
+      padding-top: 6rem;
     }
 
     @media (min-width: 768px) {
+      padding-top: 6rem;
     }
 
     @media (min-width: 1024px) {
+      padding-top: 6rem;
     }
 
     @media (min-width: 1200px) {
+      padding-top: 7rem;
     }
 
     @media (min-width: 1440px) {
-      margin-bottom: 10rem;
-      &:last-of-type {
-        margin-bottom: 0;
-      }
+      padding-top: 6rem;
     }
 
     @media (min-width: 1920px) {
+      padding-top: 7rem;
     }
 
     @media (min-width: 2560px) {
@@ -4216,36 +4219,38 @@ p {
       }
 
       @media (min-width: 320px) {
-        width: 80%;
-        margin-bottom: 4rem;
+        width: 92.5%;
+        margin-bottom: 6rem;
       }
 
       @media (min-width: 576px) {
-        width: 57.5%;
-        margin-bottom: 6rem;
-      }
-
-      @media (min-width: 768px) {
-        width: 80%;
-        margin-bottom: 6rem;
-      }
-
-      @media (min-width: 1024px) {
-        width: 90%;
+        width: 65%;
         margin-bottom: 8rem;
       }
 
+      @media (min-width: 768px) {
+        width: 92.5%;
+        margin-bottom: 9rem;
+      }
+
+      @media (min-width: 1024px) {
+        width: 95%;
+        margin-bottom: 6.5rem;
+      }
+
       @media (min-width: 1200px) {
+        width: 95%;
+        margin-bottom: 7rem;
       }
 
       @media (min-width: 1440px) {
-        width: 80%;
-        margin-bottom: 2rem;
+        width: 95%;
+        margin-bottom: 10rem;
       }
 
       @media (min-width: 1920px) {
-        width: 85%;
-        margin-bottom: 2rem;
+        width: 92.5%;
+        margin-bottom: 13rem;
       }
 
       @media (min-width: 2560px) {
