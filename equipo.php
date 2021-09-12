@@ -38,7 +38,7 @@
 
                 <div class="columna-miembro-equipo col-12 col-sm-12 col-md-6 col-lg-4 flex-column-start-center">
                     <img class="imagen-miembro"
-                        src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 170, 170, true ) ); ?>"
+                        src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
                         alt="<?php echo get_the_title();?>">
                     <h3 class="titulo-regular"><?php echo get_the_title();?></h3>
                     <h4 class="texto-detalle"><?php echo get_post_meta( get_the_ID(), '_equipo_cargo', 1 ); ?></h4>

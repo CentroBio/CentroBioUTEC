@@ -19,7 +19,7 @@
 
         <div class="pagina-single-noticia">
 
-            <div class="contenedor-post-relacionados padding-vertical padding-lateral-post-contenido">
+            <div class="contenedor-post-relacionados padding-vertical">
 
                 <?php $pID = get_the_ID() ?>
                 <?php	

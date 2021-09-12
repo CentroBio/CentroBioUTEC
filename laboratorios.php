@@ -29,25 +29,26 @@
 
         <?php if ( $query->have_posts() ) : ?>
 
-        <div class="row flex-center-center">
+        <div class="row flex-center-center contenedor-descripcion-laboratorios">
 
             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-center-center">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 flex-center-center">
 
                 <div class="elemento-laboratorio">
 
-                    <div class="contenido">
+                    <div class="contenido flex-center-center">
 
-                        <img class="imagen-laboratorio"
-                            src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 400, 300, true ) ); ?>"
-                            alt="<?php echo get_the_title();?>">
+                        <div class="imagen-thumbnail-post-horizontal">
+                            <img class="imagen-laboratorio"
+                                src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
+                                alt="<?php echo get_the_title();?>">
+                            <h3 class="titulo-laboratorio titulo texto-regular texto-blanco">
+                                <?php echo get_the_title();?>
+                            </h3>
 
-                        <h3 class="titulo-laboratorio titulo texto-regular texto-blanco">
-                            <?php echo get_the_title();?>
-                        </h3>
-
-                        <a class="enlace-laboratorio" href="<?php the_permalink(); ?>" target="_blank"></a>
+                            <a class="enlace-laboratorio" href="<?php the_permalink(); ?>" target="_blank"></a>
+                        </div>
 
                     </div>
 

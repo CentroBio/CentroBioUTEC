@@ -6,8 +6,7 @@
     <?php while ( have_posts() ) : the_post(); ?>
 
     <div class="datos-investigador padding-lateral padding-vertical flex-center-center">
-        <img class="imagen-investigador"
-            src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 170, 170, true ) ); ?>"
+        <img class="imagen-investigador" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
             alt="<?php echo get_the_title();?>">
         <div class="datos flex-column-center-start">
             <h2 class="titulo-regular"><?php echo get_the_title();?></h2>

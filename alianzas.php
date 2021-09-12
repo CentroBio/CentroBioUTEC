@@ -28,9 +28,9 @@
                 <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
                 <div class="columna-miembro-aliado col-12 col-sm-12 col-md-6 col-lg-4 flex-column-start-center">
-                    <a class="imagen-aliado"
+                    <a class="imagen-logos-carousel-pagina imagen-aliado"
                         href="<?php echo get_post_meta( get_the_ID(), '_aliado_enlace_web', 1 ); ?>" target="_blank">
-                        <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 170, 170, true ) ); ?>"
+                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
                             alt="<?php echo get_the_title();?>">
                     </a>
 

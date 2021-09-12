@@ -18,7 +18,8 @@
         <div class="row flex-center-center">
 
             <?php foreach($imagenes as $imagen) { ?>
-            <div class="contenedor-imagen col-sm-10 col-md-6 col-lg-5 flex-center-center">
+            <div
+                class="contenedor-imagen imagen-thumbnail-post-horizontal col-sm-10 col-md-6 col-lg-6 flex-center-center">
                 <img src="<?php echo $imagen?>">
             </div>
             <?php } ?>
