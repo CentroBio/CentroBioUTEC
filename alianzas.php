@@ -12,7 +12,7 @@
 
             $args = array(
                 'post_type' => 'aliados-post',
-                'posts_per_page ' => -1
+                'nopaging' => true
             );
             
             $query = new WP_Query( $args );

@@ -14,6 +14,7 @@
 
                     $args = array(
                         'post_type' => 'investigadores-post',
+                        'nopaging' => true,
                         'tax_query' => array(
                             array(
                                 'taxonomy' => 'tipo',
@@ -38,6 +39,25 @@
 
                 <?php if ($term->name == "Investigadores adjuntos" || $term->name == "Adjunct researchers") { ?>
 
+                <?php if (get_post_meta( get_the_ID(), '_investigador_link_institucion', 1 ) != "") { ?>
+
+                <a href="<?php echo get_post_meta( get_the_ID(), '_investigador_link_institucion', 1 ); ?>"
+                    target="_blank"
+                    class="columna-miembro-investigador col-12 col-sm-12 col-md-6 col-lg-4 flex-column-start-center">
+                    <img class="imagen-investigador"
+                        src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
+                        alt="<?php echo get_the_title();?>">
+                    <h3 class="titulo-regular"><?php echo get_the_title();?></h3>
+                    <h4 class="texto-detalle">
+                        <?php echo get_post_meta( get_the_ID(), '_investigador_titulo', 1 ); ?>
+                    </h4>
+                    <h4 class="texto-detalle">
+                        <?php echo get_post_meta( get_the_ID(), '_investigador_correo', 1 ); ?>
+                    </h4>
+                </a>
+
+                <?php } else { ?>
+
                 <div class="columna-miembro-investigador col-12 col-sm-12 col-md-6 col-lg-4 flex-column-start-center">
                     <img class="imagen-investigador"
                         src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
@@ -50,6 +70,8 @@
                         <?php echo get_post_meta( get_the_ID(), '_investigador_correo', 1 ); ?>
                     </h4>
                 </div>
+
+                <?php } ?>
 
                 <?php } else { ?>
 

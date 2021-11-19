@@ -2058,14 +2058,14 @@ p {
 // SCROLLBAR //
 
 .os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
-  background: $colorScrollbar;
+  background: $colorScrollbar !important;
 }
 
 .os-theme-dark
   > .os-scrollbar:hover
   > .os-scrollbar-track
   > .os-scrollbar-handle {
-  background: $colorScrollbarHover;
+  background: $colorScrollbarHover !important;
 }
 
 // HEADER //
@@ -6292,7 +6292,7 @@ p {
   }
 
   a {
-    color: $colorPrincipal;
+    color: $colorPrincipal !important;
     font-family: NunitoSansBold;
   }
 
@@ -6661,7 +6661,7 @@ p {
   }
 
   a {
-    color: $colorPrincipal;
+    color: $colorPrincipal !important;
     font-family: NunitoSansBold;
   }
 
