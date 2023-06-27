@@ -13,8 +13,8 @@ Text Domain: inotheme
 */
 
 // RESET STYLES //
-@import "compass";
-@import "compass/reset";
+// @import "compass";
+// @import "compass/reset";
 
 // SET 10PX = 1REM
 html {
@@ -39,7 +39,8 @@ $colorTextoRegular: #212121;
 $colorTextoDetalle: #777777;
 $colorFondoFooter: #231f20;
 $colorPrincipalLight: rgba(0, 191, 255, 0.05);
-$colorScrollbar: rgba(0, 191, 255, 0.3);
+// $colorScrollbar: rgba(0, 191, 255, 0.3);\
+$colorScrollbar: #ff0000;
 $colorScrollbarHover: rgba(0, 191, 255, 0.75);
 $colorFondoBotonVerMas: rgba(33, 33, 33, 0.92);
 $colorFondoDropdownSubmenus: rgba(33, 33, 33, 0.92);
