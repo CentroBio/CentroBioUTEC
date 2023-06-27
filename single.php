@@ -5,25 +5,20 @@
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <div class="padding-top-only padding-lateral flex-column-center-center">
+    <div class="padding-top-only padding-lateral-post-contenido flex-column-center-center">
 
         <div class="subtitulo-fondo-imagen texto-color-principal titulo texto-centrado">
             <?php echo get_the_title();?>
         </div>
 
-        <br>
-        <br>
-        <br>
-
-        <div class="imagen-post">
-            <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id( $post->ID ), array( 800, 500, true ) ); ?>"
-                alt="">
-        </div>
     </div>
 
 
-    <div class="contenedor-post texto-regular padding-lateral">
+    <div class="contenedor-post texto-regular padding-lateral-post-contenido">
         <?php the_content();?>
+        <h3 class="subtitulo-fondo-imagen texto-color-principal titulo texto-centrado">
+            <?php _e( "Otros posts", "inotheme" ) ?>
+        </h3>
     </div>
 
     <div class="contenedor-post-relacionados padding-vertical padding-lateral">
@@ -61,6 +56,13 @@
             <?php endwhile;?>
 
         </div>
+
+        <div class="padding-top-only texto-centrado">
+            <div class="boton-ver-mas texto-blanco">
+                <a href="<?php _e( "/blog", "inotheme" )?>"><?php _e( "Volver a posts", "inotheme" ) ?></a>
+            </div>
+        </div>
+
         <?php endif; ?>
 
     </div>

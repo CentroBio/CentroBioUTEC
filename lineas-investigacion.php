@@ -12,10 +12,10 @@
 
         <?php	
 
-                    $args = array('post_type' => 'lineasi-post');
-                    $query = new WP_Query( $args );
-                        
-                ?>
+            $args = array('post_type' => 'lineasi-post');
+            $query = new WP_Query( $args );
+                
+        ?>
 
         <?php if ( $query->have_posts() ) : ?>
 
@@ -23,14 +23,17 @@
 
             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex-center-center">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 flex-center-center">
 
-                <div class="elemento-linea-investigacion">
+                <div class="elemento-linea-investigacion flex-center-center">
 
                     <div class="contenido">
-                        <img class="imagen-linea-investigacion"
-                            src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 400, 300, true ) ); ?>"
-                            alt="<?php echo get_the_title();?>">
+                        <div class="imagen-thumbnail-post-horizontal">
+                            <img class="imagen-linea-investigacion"
+                                src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
+                                alt="<?php echo get_the_title();?>">
+                        </div>
+
                         <h3 class="titulo-linea-investigacion titulo texto-regular texto-blanco">
                             <?php echo get_the_title();?>
                         </h3>

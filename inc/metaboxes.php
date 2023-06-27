@@ -225,13 +225,31 @@ function metabox_laboratorios() {
         'priority'     => 'default',
     ) );
     $cmb->add_field( array(
-        'name' => 'Link página web',
-        'id' => $prefix . 'link_web',
-        'type'    => 'text',
+        'name' => 'Descripción',
+        'id' => $prefix . 'descripcion',
+        'type'    => 'wysiwyg',
     ) );
     $cmb->add_field( array(
-        'name' => 'Texto descriptivo',
-        'id' => $prefix . 'texto_descriptivo',
+        'name' => 'Imagenes',
+        'id' => $prefix . 'imagenes',
+        'type'    => 'file_list',
+    ) );
+    
+}
+
+add_action( 'cmb2_init', 'metabox_eventos' );
+
+function metabox_eventos() {
+    $prefix = '_eventos_';
+    $cmb = new_cmb2_box( array(
+        'id'           => $prefix . 'eventos',
+        'title'        => 'Fecha',
+        'object_types' => array( 'eventos-post' ),
+        'context'      => 'normal',
+        'priority'     => 'default',
+    ) );
+    $cmb->add_field( array(
+        'id' => $prefix . 'fecha',
         'type'    => 'text',
     ) );
 }

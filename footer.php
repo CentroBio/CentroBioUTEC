@@ -5,8 +5,21 @@
         <div class="row contenedor-informacion">
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 informacion flex-column-center-start">
-                <img class="logo-footer"
-                    src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio_blanco.png">
+
+                <?php if (get_locale(  ) == "es_ES") { ?>
+                <a href="/">
+                    <img class="logo-footer"
+                        src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio_blanco.png"
+                        alt="logo-centro-bio-footer">
+                </a>
+                <?php } else { ?>
+                <a href="/en/home">
+                    <img class="logo-footer"
+                        src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio_blanco.png"
+                        alt="logo-centro-bio-footer">
+                </a>
+                <?php } ?>
+
                 <p class="texto-footer texto-blanco">www.centrobio.utec.edu.pe</p>
                 <p class="texto-footer texto-blanco">Jr. Medrano Silva 165 Barranco 15063</p>
             </div>
@@ -18,18 +31,18 @@
             </div>
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 informacion flex-column-start-start">
-                <h4 class="texto-footer-bold texto-blanco"><?php _e( "Nuestras redes", "inotheme" ) ?></h4>
+                <h4 class="texto-footer-bold texto-blanco"><?php _e( "Conversatorios", "inotheme" ) ?></h4>
                 <div class="contenedor-redes-sociales">
-                    <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
-                        target="_blank">
-                        <img class="icono-red-social"
-                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/facebook_blanco.png">
-                    </a>
-                    <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
+                    <a class="contenedor-icono" href="https://www.youtube.com/channel/UC5ugtbIP4c-IUJb-bi8K_SA"
                         target="_blank">
                         <img class="icono-red-social"
                             src="<?php echo get_template_directory_uri(); ?>/img/iconos/youtube_blanco.png">
                     </a>
+                    <!-- <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
+                        target="_blank">
+                        <img class="icono-red-social"
+                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/youtube_blanco.png">
+                    </a> -->
                 </div>
             </div>
 

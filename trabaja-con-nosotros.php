@@ -5,7 +5,7 @@
 
     <div class="imagen-fondo-inicio">
         <div class="contenido">
-            <h1 class="titulo-fondo-imagen texto-blanco">Trabaja con nosotros</h1>
+            <h1 class="titulo-fondo-imagen texto-blanco"><?php _e( "Trabaja con nosotros", "inotheme" ) ?></h1>
         </div>
     </div>
 
@@ -27,9 +27,9 @@
         <?php if ( $query->have_posts() ) : ?>
         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-        <div class="contenedor-oferta-laboral flex-center-center">
-            <div class="info-oferta-laboral">
+        <div class="row contenedor-oferta-laboral flex-center-center">
 
+            <div class="col-md-12 col-lg-5 info-oferta-laboral">
                 <div class="texto-regular">
                     <?php the_excerpt(); ?>
                 </div>
@@ -40,8 +40,10 @@
                 </a>
             </div>
 
-            <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 400, 300, true ) ); ?>"
-                alt="<?php echo get_the_title();?>">
+            <div class="imagen-thumbnail-post-horizontal-card">
+                <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
+                    alt="<?php echo get_the_title();?>">
+            </div>
 
         </div>
 

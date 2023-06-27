@@ -22,14 +22,20 @@
 
             <div class="col-12 col-sm-12 col-md-6 col-lg-12 contenedor-proyecto">
                 <div class="contenido flex-center-start">
-                    <img class="imagen-proyecto"
-                        src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 450, 350, true ) ); ?>"
-                        alt="<?php echo get_the_title();?>">
-                    <div class="flex-column-center-start">
-                        <h3 class="titulo-regular titulo-proyecto"><?php echo get_the_title();?></h3>
-                        <p class="descripcion-proyecto texto-regular"><?php echo get_the_excerpt() ?></p>
-                        <div class="boton-ver-mas">
-                            <a href="<?php the_permalink(); ?>"><?php _e( "Ver más", "inotheme" ) ?></a>
+
+                    <div class="row flex-center-start">
+                        <div class="imagen-thumbnail-post-horizontal">
+                            <img class="imagen-proyecto"
+                                src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
+                                alt="<?php echo get_the_title();?>">
+                        </div>
+
+                        <div class="col-lg-6 flex-column-center-start">
+                            <h3 class="titulo-regular titulo-proyecto"><?php echo get_the_title();?></h3>
+                            <p class="descripcion-proyecto texto-regular"><?php echo get_the_excerpt() ?></p>
+                            <div class="boton-ver-mas">
+                                <a href="<?php the_permalink(); ?>"><?php _e( "Ver más", "inotheme" ) ?></a>
+                            </div>
                         </div>
                     </div>
 
@@ -42,6 +48,8 @@
         </div>
 
     </div>
+
+
 
 </div>
 

@@ -26,9 +26,15 @@
 
     <div class="navbar-desktop padding-lateral flex-between-center">
 
-        <div class="logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio.png">
-        </div>
+        <?php if (get_locale(  ) == "es_ES") { ?>
+        <a href="/" class="logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio.png" alt="logo-centro-bio">
+        </a>
+        <?php } else { ?>
+        <a href="/en/home" class="logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio.png" alt="logo-centro-bio">
+        </a>
+        <?php } ?>
 
         <?php 
 
@@ -96,14 +102,33 @@
 
                 <?php } ?>
 
+                <?php if (get_locale(  ) == "es_ES") { ?>
+
+                <li class="menu-item menu-item-idioma menu-item-idioma-seleccionado">
+                    <a href="/"><?php _e( "Español", "inotheme" ) ?></a>
+                </li>
+
+                <li class="menu-item menu-item-idioma">
+                    <a href="/en/home"><?php _e( "Inglés", "inotheme" ) ?></a>
+                </li>
+                <?php } else { ?>
+
+                <li class="menu-item menu-item-idioma">
+                    <a href="/"><?php _e( "Español", "inotheme" ) ?></a>
+                </li>
+
+                <li class="menu-item menu-item-idioma menu-item-idioma-seleccionado">
+                    <a href="/en/home"><?php _e( "Inglés", "inotheme" ) ?></a>
+                </li>
+
+                <?php } ?>
+
             </ul>
+
+
+
+
         </div>
-
-
-        <!-- <ul style="height: 2rem" class="texto-regular">
-            <li><a style="color: black !important" class="esp" href="/">&nbsp;Español</a></li>
-            <li><a style="color: black !important" class="eng" href="/en/home">&nbsp;English</a></li>
-        </ul> -->
 
     </div>
 
@@ -135,9 +160,33 @@
 
                 <?php } ?>
 
+
+
             </li>
 
             <?php } ?>
+
+            <?php if (get_locale(  ) == "es_ES") { ?>
+
+            <li class="menu-item menu-item-idioma menu-item-idioma-seleccionado">
+                <a href="/"><?php _e( "Español", "inotheme" ) ?></a>
+            </li>
+
+            <li class="menu-item menu-item-idioma">
+                <a href="/en/home"><?php _e( "Inglés", "inotheme" ) ?></a>
+            </li>
+            <?php } else { ?>
+
+            <li class="menu-item menu-item-idioma">
+                <a href=" /"><?php _e( "Español", "inotheme" ) ?></a>
+            </li>
+
+            <li class="menu-item menu-item-idioma menu-item-idioma-seleccionado">
+                <a href="/en/home"><?php _e( "Inglés", "inotheme" ) ?></a>
+            </li>
+
+            <?php } ?>
+
 
         </ul>
     </div>
@@ -149,7 +198,10 @@
 
         foreach($navbar_items as $main_menu) {
 
-            if ($main_menu->child_items) {
+            $childList = $main_menu->child_items;
+            $childArray = array($childList);
+            
+            if (is_countable($childList) && count($childList) > 1) {
                 
     ?>
 
@@ -158,8 +210,10 @@
         <div
             class="flex-column-center-start descripcion-submenu descripcion-submenu-<?php echo $main_menu->ID?> descripcion-submenu-<?php echo $main_menu->post_name?>">
 
+            <!-- <?php var_dump($main_menu->ID) ?> -->
+
             <!-- MENU NOSOTROS -->
-            <?php if ($main_menu -> ID == 533 || $main_menu -> ID == 550) { ?>
+            <?php if ($main_menu -> ID == 892 || $main_menu -> ID == 909) { ?>
 
             <h2 class="titulo-dropdown-submenu"><?php _e( "Acerca de BIO", "inotheme" ) ?></h2>
             <p class="subtitulo-dropdown-submenu">
@@ -167,7 +221,7 @@
             </p>
 
             <!-- MENU INVESTIGACION -->
-            <?php } else if ($main_menu -> ID == 567 || $main_menu -> ID == 561) { ?>
+            <?php } else if ($main_menu -> ID == 894 || $main_menu -> ID == 913) { ?>
 
             <h2 class="titulo-dropdown-submenu"><?php _e( "Investigación en BIO", "inotheme" ) ?></h2>
             <p class="subtitulo-dropdown-submenu">
@@ -175,7 +229,7 @@
             </p>
 
             <!-- MENU SEMINARIOS Y EVENTOS -->
-            <?php } else if ($main_menu -> ID == 574 || $main_menu -> ID == 563) { ?>
+            <?php } else if ($main_menu -> ID == 906 || $main_menu -> ID == 910) { ?>
 
             <h2 class="titulo-dropdown-submenu"><?php _e( "Seminarios y eventos", "inotheme" ) ?></h2>
             <p class="subtitulo-dropdown-submenu">
