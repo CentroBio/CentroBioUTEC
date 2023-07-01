@@ -13,7 +13,7 @@
 
         <div class="imagen-post texto-centrado">
             <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id( $post->ID ), array( 800, 500, true ) ); ?>"
-                alt="">
+                alt="<?php echo get_the_title();?>">
         </div>
 
     </div>

@@ -10,13 +10,13 @@
                 <a href="/">
                     <img class="logo-footer"
                         src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio_blanco.png"
-                        alt="logo-centro-bio-footer">
+                        alt="<?php _e( "Logo Centro BIO", "inotheme" )?>">
                 </a>
                 <?php } else { ?>
                 <a href="/en/home">
                     <img class="logo-footer"
                         src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio_blanco.png"
-                        alt="logo-centro-bio-footer">
+                        alt="<?php _e( "Logo Centro BIO", "inotheme" )?>">
                 </a>
                 <?php } ?>
 
@@ -36,7 +36,8 @@
                     <a class="contenedor-icono" href="https://www.youtube.com/channel/UC5ugtbIP4c-IUJb-bi8K_SA"
                         target="_blank">
                         <img class="icono-red-social"
-                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/youtube_blanco.png">
+                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/youtube_blanco.png"
+                            alt="<?php _e( "Icono Youtube", "inotheme" )?>">
                     </a>
                     <!-- <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
                         target="_blank">

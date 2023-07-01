@@ -29,18 +29,21 @@
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 flex-column-center-start contenedor-datos">
                 <div class="dato flex-center-start">
                     <img class="icono icono-ubicacion"
-                        src="<?php echo get_template_directory_uri(); ?>/img/iconos/icono_ubicacion.png">
+                        src="<?php echo get_template_directory_uri(); ?>/img/iconos/icono_ubicacion.png"
+                        alt="<?php _e( "Icono ubicación", "inotheme" )?>">
                     <p class="texto-detalle texto-color-regular texto-izquierda">Jr. Medrano Silva 165 Barranco. Lima
                         04, Peru</p>
                 </div>
                 <div class="dato flex-center-start">
-                    <img class="icono icono-ubicacion"
-                        src="<?php echo get_template_directory_uri(); ?>/img/iconos/icono_email.png">
+                    <img class="icono icono-email"
+                        src="<?php echo get_template_directory_uri(); ?>/img/iconos/icono_email.png"
+                        alt="<?php _e( "Icono email", "inotheme" )?>">
                     <p class="texto-detalle texto-color-regular texto-izquierda">centrobio@utec.edu.pe</p>
                 </div>
                 <div class="dato flex-center-start">
-                    <img class="icono icono-ubicacion"
-                        src="<?php echo get_template_directory_uri(); ?>/img/iconos/icono_telefono.png">
+                    <img class="icono icono-telefono"
+                        src="<?php echo get_template_directory_uri(); ?>/img/iconos/icono_telefono.png"
+                        alt="<?php _e( "Icono teléfono", "inotheme" )?>">
                     <p class="texto-detalle texto-color-regular texto-izquierda">(+511)2305000</p>
                 </div>
             </div>
