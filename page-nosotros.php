@@ -61,19 +61,19 @@
         <div class="contenedor-lista-objetivos texto-regular flex-column-center-start">
             <div class="objetivo flex-start-start">
                 <div class="numero-objetivo flex-center-center"><span>1</span></div>
-                <div class="texto-regular descripcion-objetivo"><?php echo $objetivo_1;?></div>
+                <div class="descripcion-objetivo"><?php echo $objetivo_1;?></div>
             </div>
             <div class="objetivo flex-start-start">
                 <div class="numero-objetivo flex-center-center">2</div>
-                <div class="texto-regular descripcion-objetivo"><?php echo $objetivo_2;?></div>
+                <div class="descripcion-objetivo"><?php echo $objetivo_2;?></div>
             </div>
             <div class="objetivo flex-start-start">
                 <div class="numero-objetivo flex-center-center">3</div>
-                <div class="texto-regular descripcion-objetivo"><?php echo $objetivo_3;?></div>
+                <div class="descripcion-objetivo"><?php echo $objetivo_3;?></div>
             </div>
             <div class="objetivo flex-start-start">
                 <div class="numero-objetivo flex-center-center">4</div>
-                <div class="texto-regular descripcion-objetivo"><?php echo $objetivo_4;?></div>
+                <div class="descripcion-objetivo"><?php echo $objetivo_4;?></div>
             </div>
         </div>
         <div class="contenedor-titulo-objetivos titulo-fondo-imagen texto-color-principal">
@@ -83,7 +83,7 @@
     </div>
 
     <!-- Mision - Vision -->
-    <div class="padding-vertical padding-lateral">
+    <div class="padding-vertical-intro padding-lateral">
 
         <div class="contenedor-mision-vision flex-center-center">
             <div class="texto-mision-vision">

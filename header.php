@@ -13,7 +13,7 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width">
-    <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('name') : wp_title(); ?></title>
+    <title><?php is_front_page() ? bloginfo('name') : wp_title(""); ?></title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.min.css"
         rel="stylesheet">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -124,9 +124,6 @@
                 <?php } ?>
 
             </ul>
-
-
-
 
         </div>
 

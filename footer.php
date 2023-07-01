@@ -31,18 +31,28 @@
             </div>
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 informacion flex-column-start-start">
-                <h4 class="texto-footer-bold texto-blanco"><?php _e( "Conversatorios", "inotheme" ) ?></h4>
+                <h4 class="texto-footer-bold texto-blanco"><?php _e( "Redes sociales", "inotheme" ) ?></h4>
                 <div class="contenedor-redes-sociales">
+                    <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
+                        target="_blank">
+                        <img class="icono-red-social"
+                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/facebook_blanco.png">
+                    </a>
+                    <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
+                        target="_blank">
+                        <img class="icono-red-social"
+                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/instagram_blanco.png">
+                    </a>
+                    <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
+                        target="_blank">
+                        <img class="icono-red-social"
+                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/linkedin_blanco.png">
+                    </a>
                     <a class="contenedor-icono" href="https://www.youtube.com/channel/UC5ugtbIP4c-IUJb-bi8K_SA"
                         target="_blank">
                         <img class="icono-red-social"
                             src="<?php echo get_template_directory_uri(); ?>/img/iconos/youtube_blanco.png">
                     </a>
-                    <!-- <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
-                        target="_blank">
-                        <img class="icono-red-social"
-                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/youtube_blanco.png">
-                    </a> -->
                 </div>
             </div>
 
@@ -50,7 +60,9 @@
 
         <div>
             <p class="texto-copyright texto-blanco">
-                <?php _e( "Copyright © 2021 Bio - UTEC. Todos los derechos reservados", "inotheme" ) ?></p>
+                <?php _e("Copyright ", "inotheme" )?> &copy <?php echo date('Y') ?>
+                <?php _e(" Bio - UTEC. Todos los derechos reservados", "inotheme" )?>
+            </p>
         </div>
 
     </div>
@@ -67,24 +79,24 @@
             autoplay: true,
             cssEase: 'cubic-bezier(0.33, 1, 0.68, 1)',
             infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToShow: 5,
+            slidesToScroll: 5,
             arrows: false,
             dots: true,
             appendDots: ".slider-aliados",
             responsive: [{
                     breakpoint: 768,
                     settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
                         infinite: true,
                     }
                 },
                 {
                     breakpoint: 577,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
                         infinite: true,
                     }
                 },

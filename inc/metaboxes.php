@@ -243,13 +243,19 @@ function metabox_eventos() {
     $prefix = '_eventos_';
     $cmb = new_cmb2_box( array(
         'id'           => $prefix . 'eventos',
-        'title'        => 'Fecha',
+        'title'        => 'Eventos',
         'object_types' => array( 'eventos-post' ),
         'context'      => 'normal',
         'priority'     => 'default',
     ) );
     $cmb->add_field( array(
+        'name' => 'Fecha',
         'id' => $prefix . 'fecha',
+        'type'    => 'text',
+    ) );
+    $cmb->add_field( array(
+        'name' => 'Video',
+        'id' => $prefix . 'link_video',
         'type'    => 'text',
     ) );
 }

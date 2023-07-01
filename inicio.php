@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<div class="contenedor-intro padding-vertical padding-lateral">
+<div class="contenedor-intro padding-vertical-intro padding-lateral">
     <div class="contenido">
         <p class="texto-intro">
             <?php _e('Transformamos la sociedad buscando soluciones en', 'inotheme') ?><span
@@ -73,6 +73,20 @@
     </div>
 </div>
 
+
+<?php 
+    $url_eventos_es = get_site_url() . "/agenda";
+    $url_eventos_en = get_site_url() . "/en/our-agenda";
+    $url_noticias_es = get_site_url() . "/noticias";
+    $url_noticias_en = get_site_url() . "/en/news";
+    $url_blog_es = get_site_url() . "/blog";
+    $url_blog_en = get_site_url() . "/en/our-blog";
+    $url_eventos = get_locale(  ) == "es_ES" ? $url_eventos_es : $url_eventos_en;
+    $url_noticias = get_locale(  ) == "es_ES" ? $url_noticias_es : $url_noticias_en;
+    $url_blog = get_locale(  ) == "es_ES" ? $url_blog_es : $url_blog_en;
+?>
+<?php $posts_per_section = 4 ?>
+
 <div class="seccion-eventos padding-vertical padding-lateral">
 
     <h2 class="titulo-seccion"><?php _e( "Eventos", "inotheme" ) ?></h2>
@@ -82,7 +96,7 @@
             
             $args = array(
                 'post_type' => 'eventos-post',
-                'posts_per_page' => '2',
+                'posts_per_page' => $posts_per_section,
             );
             $query = new WP_Query( $args );
                     
@@ -115,6 +129,12 @@
 
     </div>
 
+    <div class="padding-vertical flex-center-center">
+        <div class="boton-ver-seccion">
+            <a href="<?php echo $url_eventos ?>"><?php _e( "Más eventos", "inotheme" ) ?></a>
+        </div>
+    </div>
+
 </div>
 
 <div class="seccion-noticias padding-vertical padding-lateral">
@@ -125,7 +145,7 @@
 
             $args = array(
                 'post_type' => 'noticias-post',
-                'posts_per_page' => '2', 
+                'posts_per_page' => $posts_per_section, 
             );
             $query = new WP_Query( $args );
             
@@ -159,6 +179,13 @@
         <?php endif; ?>
 
     </div>
+
+    <div class="padding-vertical flex-center-center">
+        <div class="boton-ver-seccion">
+            <a href="<?php echo $url_noticias ?>"><?php _e( "Más noticias", "inotheme" ) ?></a>
+        </div>
+    </div>
+
 </div>
 
 <div class="seccion-blog padding-vertical padding-lateral">
@@ -168,7 +195,7 @@
         <?php	
 
             $args = array(
-                'posts_per_page' => '2', 
+                'posts_per_page' => $posts_per_section, 
 
             );
             $query = new WP_Query( $args );
@@ -201,9 +228,16 @@
         <?php endif; ?>
 
     </div>
+
+    <div class="padding-vertical flex-center-center">
+        <div class="boton-ver-seccion">
+            <a href="<?php echo $url_blog ?>"><?php _e( "Más publicaciones", "inotheme" ) ?></a>
+        </div>
+    </div>
+
 </div>
 
-<div class="seccion-aliados padding-vertical padding-lateral">
+<div class="seccion-aliados padding-vertical-intro padding-lateral">
     <h2 class="titulo-seccion"><?php _e( "Nuestros aliados", "inotheme" ) ?></h2>
 
     <div class="contenedor-aliados">
@@ -211,6 +245,7 @@
         <?php	
             $args = array(
                 'post_type' => 'aliados-post',
+                'nopaging' => true
             );
             $query = new WP_Query( $args );    
         ?>
