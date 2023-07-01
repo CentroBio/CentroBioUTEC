@@ -58,7 +58,7 @@ msgstr "Contact"
 msgid "Trabaja con nosotros"
 msgstr "Work with us"
 
-# Lineas de investigacion
+# Líneas de investigación
 msgid "Líneas de investigación"
 msgstr "Research areas"
 
@@ -253,3 +253,53 @@ msgstr "Seminars and events"
 # Menu eventos subtitulo
 msgid "A través del Centro BIO y la carrera de Bioingeniería de UTEC, se desarrollan todos los años una serie de eventos y capactaciones que promueven la investigación contando con la participación de excelentes profesionales nacionales e internacionales."
 msgstr "The Bio research center and the Faculty of Bioengineering at UTEC organize a series of events and master classes with the help of excellent national and international professionals. These events are held  every year and promote different research fields."
+
+# ALT IMAGENES
+
+# Icono ubicación
+msgid "Icono ubicación"
+msgstr "Location icon"
+
+# Icono email
+msgid "Icono email"
+msgstr "Email icon"
+
+# Icono teléfono
+msgid "Icono teléfono"
+msgstr "Phone icon"
+
+# Logo centro BIO
+msgid "Logo Centro BIO"
+msgstr "Centro BIO logo"
+
+# Icono Facebook
+msgid "Icono Facebook"
+msgstr "Facebook Icon"
+
+# Icono Instagram
+msgid "Icono Instagram"
+msgstr "Instagram Icon"
+
+# Icono LinkedIn
+msgid "Icono LinkedIn"
+msgstr "LinkedIn Icon"
+
+# Icono Youtube
+msgid "Icono Youtube"
+msgstr "Youtube Icon"
+
+# Icono Medicina
+msgid "Icono medicina"
+msgstr "Medicine Icon"
+
+# Icono símbolo más
+msgid "Icono símbolo más"
+msgstr "Plus symbol icon"
+
+# Icono biología
+msgid "Icono biología"
+msgstr "Biology Icon"
+
+# Icono accesibilidad
+msgid "Icono accesibilidad"
+msgstr "Accessibility Icon"

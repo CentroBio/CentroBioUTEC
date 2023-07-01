@@ -15,11 +15,16 @@
                 class="texto-intro-bold"><?php _e(' medicina y biología a través de la ingeniería', 'inotheme') ?></span>
         </p>
         <div class="contenedor-iconos">
-            <img class="icono" src="<?php echo get_template_directory_uri(); ?>/img/iconos/medicina.png">
-            <img class="icono-mas" src="<?php echo get_template_directory_uri(); ?>/img/iconos/mas_celeste.png">
-            <img class="icono" src="<?php echo get_template_directory_uri(); ?>/img/iconos/biologia.png">
-            <img class="icono-mas" src="<?php echo get_template_directory_uri(); ?>/img/iconos/mas_celeste.png">
-            <img class="icono" src="<?php echo get_template_directory_uri(); ?>/img/iconos/accesibilidad.png">
+            <img class="icono" src="<?php echo get_template_directory_uri(); ?>/img/iconos/medicina.png"
+                alt="<?php _e( "Icono medicina", "inotheme" )?>">
+            <img class="icono-mas" src="<?php echo get_template_directory_uri(); ?>/img/iconos/mas_celeste.png"
+                alt="<?php _e( "Icono símbolo más", "inotheme" )?>">
+            <img class="icono" src="<?php echo get_template_directory_uri(); ?>/img/iconos/biologia.png"
+                alt="<?php _e( "Icono biología", "inotheme" )?>">
+            <img class="icono-mas" src="<?php echo get_template_directory_uri(); ?>/img/iconos/mas_celeste.png"
+                alt="<?php _e( "Icono símbolo más", "inotheme" )?>">
+            <img class="icono" src="<?php echo get_template_directory_uri(); ?>/img/iconos/accesibilidad.png"
+                alt="<?php _e( "Icono accesibilidad", "inotheme" )?>">
         </div>
     </div>
 </div>
@@ -33,23 +38,28 @@
         <div class="carousel-enlaces">
             <div class="elemento-carousel-enlaces">
                 <img class="imagen-elemento-carousel-enlaces"
-                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/nosotros.jpg">
+                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/nosotros.jpg"
+                    alt="<?php _e( "Nosotros", "inotheme" )?>">
             </div>
             <div class="elemento-carousel-enlaces">
                 <img class="imagen-elemento-carousel-enlaces"
-                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/investigadores.jpg">
+                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/investigadores.jpg"
+                    alt="<?php _e( "Investigadores", "inotheme" )?>">
             </div>
             <div class="elemento-carousel-enlaces">
                 <img class="imagen-elemento-carousel-enlaces"
-                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/lineas_de_investigacion.jpg">
+                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/lineas_de_investigacion.jpg"
+                    alt="<?php _e( "Líneas de investigación", "inotheme" )?>">
             </div>
             <div class="elemento-carousel-enlaces">
                 <img class="imagen-elemento-carousel-enlaces"
-                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/proyectos.jpg">
+                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/proyectos.jpg"
+                    alt="<?php _e( "Proyectos", "inotheme" )?>">
             </div>
             <div class="elemento-carousel-enlaces">
                 <img class="imagen-elemento-carousel-enlaces"
-                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/laboratorios.JPG">
+                    src="<?php echo get_template_directory_uri(); ?>/img/imagenes_carousel/laboratorios.JPG"
+                    alt="<?php _e( "Laboratorios", "inotheme" )?>">
             </div>
         </div>
         <div class="contenedor-enlaces">
@@ -224,7 +234,8 @@
 
                 <a class="imagen-logos-carousel"
                     href="<?php echo get_post_meta( get_the_ID(), '_aliado_enlace_web', 1 );?>" target="_blank">
-                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" />
+                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"
+                        alt="<?php echo get_the_title();?>" />
                 </a>
 
             </div>
