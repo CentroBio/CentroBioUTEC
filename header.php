@@ -28,11 +28,13 @@
 
         <?php if (get_locale(  ) == "es_ES") { ?>
         <a href="/" class="logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio.png" alt="logo-centro-bio">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio.png"
+                alt="<?php _e( "Logo Centro BIO", "inotheme" )?>">
         </a>
         <?php } else { ?>
         <a href="/en/home" class="logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio.png" alt="logo-centro-bio">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio.png"
+                alt="<?php _e( "Logo Centro BIO", "inotheme" )?>">
         </a>
         <?php } ?>
 

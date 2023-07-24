@@ -10,13 +10,13 @@
                 <a href="/">
                     <img class="logo-footer"
                         src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio_blanco.png"
-                        alt="logo-centro-bio-footer">
+                        alt="<?php _e( "Logo Centro BIO", "inotheme" )?>">
                 </a>
                 <?php } else { ?>
                 <a href="/en/home">
                     <img class="logo-footer"
                         src="<?php echo get_template_directory_uri(); ?>/img/logos/logo_centro_bio_blanco.png"
-                        alt="logo-centro-bio-footer">
+                        alt="<?php _e( "Logo Centro BIO", "inotheme" )?>">
                 </a>
                 <?php } ?>
 
@@ -35,16 +35,19 @@
                 <div class="contenedor-redes-sociales">
                     <a class="contenedor-icono" href="https://www.instagram.com/centrobio.utec/" target="_blank">
                         <img class="icono-red-social"
-                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/instagram_blanco.png">
+                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/instagram_blanco.png"
+                            alt="<?php _e( "Icono Instagram", "inotheme" )?>">
                     </a>
                     <a class="contenedor-icono" href="https://www.linkedin.com/in/centro-bio-utec-37007b254/"
                         target="_blank">
                         <img class="icono-red-social"
-                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/linkedin_blanco.png">
+                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/linkedin_blanco.png"
+                            alt="<?php _e( "Icono LinkedIn", "inotheme" )?>">
                     </a>
                     <a class="contenedor-icono" href="https://www.youtube.com/@centrobio-utec5320" target="_blank">
                         <img class="icono-red-social"
-                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/youtube_blanco.png">
+                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/youtube_blanco.png"
+                            alt="<?php _e( "Icono Youtube", "inotheme" )?>">
                     </a>
                 </div>
             </div>
