@@ -33,23 +33,16 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 informacion flex-column-start-start">
                 <h4 class="texto-footer-bold texto-blanco"><?php _e( "Redes sociales", "inotheme" ) ?></h4>
                 <div class="contenedor-redes-sociales">
-                    <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
-                        target="_blank">
-                        <img class="icono-red-social"
-                            src="<?php echo get_template_directory_uri(); ?>/img/iconos/facebook_blanco.png">
-                    </a>
-                    <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
-                        target="_blank">
+                    <a class="contenedor-icono" href="https://www.instagram.com/centrobio.utec/" target="_blank">
                         <img class="icono-red-social"
                             src="<?php echo get_template_directory_uri(); ?>/img/iconos/instagram_blanco.png">
                     </a>
-                    <a class="contenedor-icono" href="https://blog.hubspot.com/website/what-is-wordpress-slug"
+                    <a class="contenedor-icono" href="https://www.linkedin.com/in/centro-bio-utec-37007b254/"
                         target="_blank">
                         <img class="icono-red-social"
                             src="<?php echo get_template_directory_uri(); ?>/img/iconos/linkedin_blanco.png">
                     </a>
-                    <a class="contenedor-icono" href="https://www.youtube.com/channel/UC5ugtbIP4c-IUJb-bi8K_SA"
-                        target="_blank">
+                    <a class="contenedor-icono" href="https://www.youtube.com/@centrobio-utec5320" target="_blank">
                         <img class="icono-red-social"
                             src="<?php echo get_template_directory_uri(); ?>/img/iconos/youtube_blanco.png">
                     </a>
