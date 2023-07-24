@@ -34,7 +34,7 @@ body {
 }
 
 // COLORES
-$colorPrincipal: #00bfff;
+$colorPrincipal: rgb(0, 191, 255);
 $colorTextoRegular: #212121;
 $colorTextoDetalle: #777777;
 $colorFondoFooter: #231f20;
@@ -44,6 +44,7 @@ $colorScrollbarHover: rgba(0, 191, 255, 0.75);
 $colorFondoBotonVerMas: rgba(33, 33, 33, 0.92);
 $colorFondoDropdownSubmenus: rgba(33, 33, 33, 0.92);
 $colorFondoOfertaLaboral: #fcfbf8;
+$colorSeccionPar: rgba(0, 191, 255, 0.05);
 
 .texto-blanco {
   color: white !important;
@@ -123,43 +124,43 @@ strong {
   color: $colorTextoRegular;
 
   @media (min-width: 320px) {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 2rem !important;
     line-height: 1.5;
   }
 
   @media (min-width: 576px) {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem !important;
     line-height: 1.5;
   }
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 2rem !important;
     line-height: 1.5;
   }
 
   @media (min-width: 1024px) {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: 2.25rem !important;
     line-height: 1.5;
   }
 
   @media (min-width: 1200px) {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: 2.25rem !important;
     line-height: 1.5;
   }
 
   @media (min-width: 1440px) {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: 2.75rem !important;
     line-height: 1.5;
   }
 
   @media (min-width: 1920px) {
-    font-size: 3.75rem;
+    font-size: 3.5rem;
     margin-bottom: 2.75rem !important;
     line-height: 1.5;
   }
@@ -177,35 +178,40 @@ p {
   color: $colorPrincipal;
   text-align: center;
   @media (min-width: 320px) {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     margin-bottom: 3rem;
+    margin-top: 2rem;
   }
 
   @media (min-width: 576px) {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 4rem;
+    margin-top: 3rem;
   }
 
   @media (min-width: 768px) {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
+    margin-top: 2rem;
   }
 
   @media (min-width: 1024px) {
-    font-size: 4.5rem;
+    font-size: 4rem;
     margin-bottom: 5rem;
+    margin-top: 3rem;
   }
 
   @media (min-width: 1200px) {
   }
 
   @media (min-width: 1440px) {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 10rem;
+    margin-top: 5rem;
   }
 
   @media (min-width: 1920px) {
-    font-size: 6.5rem;
+    font-size: 6rem;
     margin-bottom: 14rem;
   }
 
@@ -263,30 +269,30 @@ p {
 .titulo-fondo-imagen {
   font-family: FiraBold;
   @media (min-width: 320px) {
-    font-size: 5rem !important;
+    font-size: 3rem !important;
   }
 
   @media (min-width: 576px) {
-    font-size: 7.5rem !important;
+    font-size: 5.5rem !important;
   }
 
   @media (min-width: 768px) {
-    font-size: 8.5rem !important;
+    font-size: 6.5rem !important;
   }
 
   @media (min-width: 1024px) {
-    font-size: 11rem !important;
+    font-size: 9rem !important;
   }
 
   @media (min-width: 1200px) {
   }
 
   @media (min-width: 1440px) {
-    font-size: 12.5rem !important;
+    font-size: 10.5rem !important;
   }
 
   @media (min-width: 1920px) {
-    font-size: 16.5rem !important;
+    font-size: 14.5rem !important;
   }
 
   @media (min-width: 2560px) {
@@ -296,30 +302,30 @@ p {
 .subtitulo-fondo-imagen {
   font-family: FiraLight;
   @media (min-width: 320px) {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   @media (min-width: 576px) {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   @media (min-width: 768px) {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   @media (min-width: 1024px) {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 
   @media (min-width: 1200px) {
   }
 
   @media (min-width: 1440px) {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 
   @media (min-width: 1920px) {
-    font-size: 7.5rem;
+    font-size: 6.5rem;
   }
 
   @media (min-width: 2560px) {
@@ -329,25 +335,25 @@ p {
 @mixin texto-intro {
   @include texto-regular();
   @media (min-width: 320px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 100%;
     line-height: 1.425;
   }
 
   @media (min-width: 576px) {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     width: 100%;
     line-height: 1.425;
   }
 
   @media (min-width: 768px) {
-    font-size: 3.5rem;
+    font-size: 3rem;
     width: 100%;
     line-height: 1.425;
   }
 
   @media (min-width: 1024px) {
-    font-size: 4.5rem;
+    font-size: 4rem;
     width: 100%;
     line-height: 1.425;
   }
@@ -356,13 +362,13 @@ p {
   }
 
   @media (min-width: 1440px) {
-    font-size: 5.5rem;
+    font-size: 5rem;
     width: 60%;
     line-height: 1.425;
   }
 
   @media (min-width: 1920px) {
-    font-size: 6.5rem;
+    font-size: 6rem;
     width: 60%;
     line-height: 1.425;
   }
@@ -526,12 +532,12 @@ p {
   }
 
   @media (min-width: 320px) {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     margin-bottom: 1rem !important;
   }
 
   @media (min-width: 576px) {
-    font-size: 1.45rem;
+    font-size: 1.55rem;
     margin-bottom: 1rem !important;
   }
 
@@ -539,20 +545,22 @@ p {
   }
 
   @media (min-width: 1024px) {
-    font-size: 1.65rem;
-    margin-bottom: 1rem !important;
-  }
-
-  @media (min-width: 1200px) {
-  }
-
-  @media (min-width: 1440px) {
     font-size: 1.35rem;
     margin-bottom: 1.5rem !important;
   }
 
+  @media (min-width: 1200px) {
+    font-size: 1.55rem;
+    margin-bottom: 1.5rem !important;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 1.65rem;
+    margin-bottom: 1.5rem !important;
+  }
+
   @media (min-width: 1920px) {
-    font-size: 2rem;
+    font-size: 2.35rem;
     margin-bottom: 3rem !important;
   }
 
@@ -582,7 +590,7 @@ p {
 
   @media (min-width: 1024px) {
     height: 6.5rem;
-    font-size: 1.85rem;
+    font-size: 1.35rem;
     margin-bottom: 2rem;
     line-height: 5;
   }
@@ -612,7 +620,7 @@ p {
   font-family: NunitoSans;
 
   @media (min-width: 320px) {
-    font-size: 1.55rem;
+    font-size: 1.35rem;
   }
 
   @media (min-width: 576px) {
@@ -625,18 +633,20 @@ p {
 
   @media (min-width: 1024px) {
     margin-top: 3.5rem !important;
-    font-size: 1.85rem;
+    font-size: 1.35rem;
   }
 
   @media (min-width: 1200px) {
+    font-size: 1.55rem;
+    margin-bottom: 1.5rem !important;
   }
 
   @media (min-width: 1440px) {
-    font-size: 1.55rem;
+    font-size: 1.65rem;
   }
 
   @media (min-width: 1920px) {
-    font-size: 2.25rem;
+    font-size: 2.35rem;
   }
 
   @media (min-width: 2560px) {
@@ -787,7 +797,7 @@ p {
   @include texto-regular();
 
   @media (min-width: 320px) {
-    font-size: 1.85rem;
+    font-size: 1.35rem;
     margin-top: 0rem !important;
     margin-bottom: 3rem !important;
     &:last-of-type {
@@ -796,7 +806,7 @@ p {
   }
 
   @media (min-width: 576px) {
-    font-size: 1.85rem;
+    font-size: 1.35rem;
     margin-top: 0rem !important;
     margin-bottom: 3rem !important;
     &:last-of-type {
@@ -805,7 +815,7 @@ p {
   }
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 0rem !important;
     margin-bottom: 3rem !important;
     &:last-of-type {
@@ -814,7 +824,7 @@ p {
   }
 
   @media (min-width: 1024px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 0rem !important;
     margin-bottom: 5rem !important;
     &:last-of-type {
@@ -823,7 +833,7 @@ p {
   }
 
   @media (min-width: 1200px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 0rem !important;
     margin-bottom: 5rem !important;
     &:last-of-type {
@@ -832,7 +842,7 @@ p {
   }
 
   @media (min-width: 1440px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: -2.5rem !important;
     margin-bottom: 2rem !important;
     &:last-of-type {
@@ -841,7 +851,7 @@ p {
   }
 
   @media (min-width: 1920px) {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: -2.5rem !important;
     margin-bottom: 2rem !important;
     &:last-of-type {
@@ -856,25 +866,25 @@ p {
 .titulo-regular {
   @include titulo-regular();
   @media (min-width: 320px) {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     margin-bottom: 1.25rem;
     line-height: 1.5;
   }
 
   @media (min-width: 576px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1.25rem;
     line-height: 1.5;
   }
 
   @media (min-width: 768px) {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     margin-bottom: 1.25rem;
     line-height: 1.5;
   }
 
   @media (min-width: 1024px) {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
   }
@@ -883,13 +893,13 @@ p {
   }
 
   @media (min-width: 1440px) {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     margin-bottom: 2rem;
     line-height: 1.5;
   }
 
   @media (min-width: 1920px) {
-    font-size: 4rem;
+    font-size: 3.75rem;
     margin-bottom: 3rem;
     line-height: 1.5;
   }
@@ -908,12 +918,12 @@ p {
   }
 
   @media (min-width: 576px) {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 1.75rem !important;
   }
 
   @media (min-width: 768px) {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 1.75rem !important;
   }
 
@@ -926,12 +936,12 @@ p {
   }
 
   @media (min-width: 1440px) {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 2rem !important;
   }
 
   @media (min-width: 1920px) {
-    font-size: 3rem;
+    font-size: 2.75rem;
     margin-bottom: 3rem !important;
   }
 
@@ -944,11 +954,11 @@ p {
   font-family: FiraBold !important;
 
   @media (min-width: 320px) {
-    font-size: 1.5rem !important;
+    font-size: 1.25rem !important;
   }
 
   @media (min-width: 576px) {
-    font-size: 2.25rem !important;
+    font-size: 2rem !important;
   }
 
   @media (min-width: 768px) {
@@ -961,11 +971,11 @@ p {
   }
 
   @media (min-width: 1440px) {
-    font-size: 2.25rem !important;
+    font-size: 2rem !important;
   }
 
   @media (min-width: 1920px) {
-    font-size: 3.25rem !important;
+    font-size: 3rem !important;
   }
 }
 
@@ -1071,7 +1081,7 @@ p {
 
   h2 {
     @media (min-width: 320px) {
-      font-size: 5.5rem;
+      font-size: 3.5rem;
       text-align: center;
     }
 
@@ -1088,8 +1098,7 @@ p {
     }
 
     @media (min-width: 1440px) {
-      text-align: left;
-      font-size: 9rem;
+      font-size: 7rem;
     }
 
     @media (min-width: 1920px) {
@@ -1271,33 +1280,34 @@ p {
   }
 
   @media (min-width: 320px) {
-    width: 10rem !important;
-    height: 5rem;
+    width: 8rem !important;
+    height: 2.4rem;
   }
 
   @media (min-width: 576px) {
-    width: 20rem !important;
-    height: 7rem;
+    width: 10rem !important;
+    height: 3rem;
   }
 
   @media (min-width: 768px) {
+    width: 12rem !important;
+    height: 3.6rem;
+  }
+
+  @media (min-width: 1024px) {
+    width: 16rem !important;
+    height: 4.8rem;
+  }
+
+  @media (min-width: 1200px) {
     width: 20rem !important;
     height: 6rem;
   }
 
-  @media (min-width: 1024px) {
-    width: 25rem !important;
-    height: 8rem;
-  }
-
-  @media (min-width: 1200px) {
-    width: 30rem !important;
-    height: 10rem;
-  }
-
   @media (min-width: 1440px) {
-    width: 35rem !important;
-    height: 10rem;
+    width: 24rem !important;
+    height: 7rem;
+    object-fit: contain;
   }
 
   @media (min-width: 1920px) {
@@ -1420,6 +1430,51 @@ p {
   background-color: $colorFondoBotonVerMas;
 
   @media (min-width: 320px) {
+    font-size: 1.15rem;
+    padding: 0.75rem 1.75rem;
+  }
+
+  @media (min-width: 576px) {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.75rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.75rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.65rem;
+    padding: 1.25rem 2.25rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 1.5rem;
+    padding: 1rem 2.25rem;
+    margin-right: 2rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 2.5rem;
+    padding: 1.5rem 3.25rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+.boton-video-evento {
+  color: white !important;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: MerriweatherSansBold;
+  background-color: $colorPrincipal;
+
+  @media (min-width: 320px) {
     font-size: 1.35rem;
     padding: 0.75rem 1.75rem;
   }
@@ -1449,6 +1504,50 @@ p {
 
   @media (min-width: 1920px) {
     font-size: 2.75rem;
+    padding: 1.5rem 3.25rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+.boton-ver-seccion {
+  color: white !important;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: MerriweatherSansBold;
+  background-color: $colorPrincipal;
+
+  @media (min-width: 320px) {
+    font-size: 1.4rem;
+    padding: 0.75rem 1.75rem;
+  }
+
+  @media (min-width: 576px) {
+    font-size: 1.5rem;
+    padding: 0.75rem 1.75rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    padding: 0.75rem 1.75rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+    padding: 1.25rem 2.25rem;
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2.25rem;
+    padding: 1rem 2.25rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 3.5rem;
     padding: 1.5rem 3.25rem;
   }
 
@@ -1739,6 +1838,50 @@ p {
 
 @mixin padding-vertical {
   @media (min-width: 320px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @media (min-width: 576px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: 1920px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  @media (min-width: 2560px) {
+  }
+}
+
+.padding-vertical {
+  @include padding-vertical();
+}
+
+.padding-vertical-intro {
+  @media (min-width: 320px) {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -1754,8 +1897,8 @@ p {
   }
 
   @media (min-width: 1024px) {
-    padding-top: 7.25rem;
-    padding-bottom: 7.25rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
   }
 
   @media (min-width: 1200px) {
@@ -1775,10 +1918,6 @@ p {
 
   @media (min-width: 2560px) {
   }
-}
-
-.padding-vertical {
-  @include padding-vertical();
 }
 
 .padding-top-only {
@@ -2179,7 +2318,7 @@ p {
   }
 
   @media (min-width: 320px) {
-    height: 4.75rem;
+    height: 6.25rem;
 
     #menu-main_menu {
       li {
@@ -2192,7 +2331,7 @@ p {
   }
 
   @media (min-width: 576px) {
-    height: 5.75rem;
+    height: 7.25rem;
 
     #menu-main_menu {
       li {
@@ -2205,7 +2344,7 @@ p {
   }
 
   @media (min-width: 768px) {
-    height: 5.75rem;
+    height: 7.25rem;
 
     #menu-main_menu {
       li {
@@ -2231,10 +2370,11 @@ p {
   }
 
   @media (min-width: 1200px) {
+    height: 8.25rem;
   }
 
   @media (min-width: 1440px) {
-    height: 7.75rem;
+    height: 9.25rem;
 
     #menu-main_menu {
       li {
@@ -2247,7 +2387,7 @@ p {
   }
 
   @media (min-width: 1920px) {
-    height: 11rem;
+    height: 12.5rem;
 
     #menu-main_menu {
       li {
@@ -2262,11 +2402,6 @@ p {
   @media (min-width: 2560px) {
   }
 
-  .menu-item {
-    &:hover {
-    }
-  }
-
   .slicknav_nav {
     background-color: white;
   }
@@ -2277,6 +2412,7 @@ p {
     left: 0;
     right: 0;
     z-index: -1;
+    height: 100%;
     background-color: white;
     padding: 0 !important;
 
@@ -2424,12 +2560,18 @@ p {
 
     .slicknav_btn {
       background-color: white;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
 
       @media (min-width: 320px) {
+        padding: 0 3rem 0;
       }
 
       @media (min-width: 576px) {
-        margin: 1.45rem 3rem;
+        padding: 0 6rem 0;
       }
 
       @media (min-width: 768px) {
@@ -2640,12 +2782,12 @@ p {
 
   .logo-footer {
     @media (min-width: 320px) {
-      height: 4.5rem;
+      height: 5.5rem;
       margin-bottom: 3rem;
     }
 
     @media (min-width: 576px) {
-      height: 4.5rem;
+      height: 5.5rem;
       margin-bottom: 3rem;
     }
 
@@ -2653,7 +2795,7 @@ p {
     }
 
     @media (min-width: 1024px) {
-      height: 5.5rem;
+      height: 6.5rem;
       margin-bottom: 3rem;
     }
 
@@ -2661,12 +2803,12 @@ p {
     }
 
     @media (min-width: 1440px) {
-      height: 5.5rem;
+      height: 6.5rem;
       margin-bottom: 4rem;
     }
 
     @media (min-width: 1920px) {
-      height: 7.5rem;
+      height: 8.5rem;
       margin-bottom: 8rem;
     }
 
@@ -2760,67 +2902,49 @@ p {
       }
 
       .contenedor-icono {
+        @media (min-width: 320px) {
+          height: 2rem;
+          margin-right: 3rem;
+        }
+
+        @media (min-width: 576px) {
+          height: 2.25rem;
+          margin-right: 3rem;
+        }
+
+        @media (min-width: 768px) {
+        }
+
+        @media (min-width: 1024px) {
+          height: 2.5rem;
+          margin-right: 4.25rem;
+        }
+
+        @media (min-width: 1200px) {
+        }
+
+        @media (min-width: 1440px) {
+          height: 2.75rem;
+          margin-right: 4rem;
+        }
+
+        @media (min-width: 1920px) {
+          height: 3.75rem;
+          margin-right: 6rem;
+        }
+
+        @media (min-width: 2560px) {
+        }
+
         &:last-of-type {
-          @media (min-width: 320px) {
-          }
-
-          @media (min-width: 576px) {
-          }
-
-          @media (min-width: 768px) {
-          }
-
-          @media (min-width: 1024px) {
-          }
-
-          @media (min-width: 1200px) {
-          }
-
           @media (min-width: 1440px) {
             margin-right: 0;
-          }
-
-          @media (min-width: 1920px) {
-          }
-
-          @media (min-width: 2560px) {
           }
         }
 
         .icono-red-social {
-          @media (min-width: 320px) {
-            height: 2rem;
-            margin-right: 2rem;
-          }
-
-          @media (min-width: 576px) {
-            height: 2.25rem;
-            margin-right: 2rem;
-          }
-
-          @media (min-width: 768px) {
-          }
-
-          @media (min-width: 1024px) {
-            height: 2.75rem;
-            margin-right: 2.25rem;
-          }
-
-          @media (min-width: 1200px) {
-          }
-
-          @media (min-width: 1440px) {
-            height: 2.5rem;
-            margin-right: 2rem;
-          }
-
-          @media (min-width: 1920px) {
-            height: 3.5rem;
-            margin-right: 4rem;
-          }
-
-          @media (min-width: 2560px) {
-          }
+          width: 100%;
+          height: 100%;
         }
       }
     }
@@ -3169,7 +3293,7 @@ p {
       justify-content: center;
       .contenido {
         @media (min-width: 320px) {
-          margin-bottom: 5rem;
+          margin-bottom: 7rem;
         }
 
         @media (min-width: 576px) {
@@ -3179,7 +3303,7 @@ p {
         }
 
         @media (min-width: 1024px) {
-          margin-bottom: 2rem;
+          margin-bottom: 8rem;
         }
 
         @media (min-width: 1200px) {
@@ -3283,7 +3407,11 @@ p {
   }
 }
 
+.pagina-noticias {
+  background-color: white !important;
+}
 .seccion-noticias {
+  background-color: $colorSeccionPar;
   .contenedor-noticias {
     display: flex;
 
@@ -3320,9 +3448,6 @@ p {
 
       @media (min-width: 320px) {
         margin-bottom: 5rem;
-        &:last-of-type {
-          margin-bottom: 0;
-        }
       }
 
       @media (min-width: 576px) {
@@ -3333,9 +3458,6 @@ p {
 
       @media (min-width: 1024px) {
         margin-bottom: 8rem;
-        &:last-of-type {
-          margin-bottom: 0;
-        }
       }
 
       @media (min-width: 1200px) {
@@ -3343,9 +3465,6 @@ p {
 
       @media (min-width: 1440px) {
         margin-bottom: 8rem;
-        &:last-of-type {
-          margin-bottom: 0;
-        }
       }
 
       @media (min-width: 1920px) {
@@ -3555,9 +3674,6 @@ p {
 
       @media (min-width: 320px) {
         margin-bottom: 5rem;
-        &:last-of-type {
-          margin-bottom: 0;
-        }
       }
 
       @media (min-width: 576px) {
@@ -3568,9 +3684,6 @@ p {
 
       @media (min-width: 1024px) {
         margin-bottom: 8rem;
-        &:last-of-type {
-          margin-bottom: 0;
-        }
       }
 
       @media (min-width: 1200px) {
@@ -3578,9 +3691,6 @@ p {
 
       @media (min-width: 1440px) {
         margin-bottom: 8rem;
-        &:last-of-type {
-          margin-bottom: 0;
-        }
       }
 
       @media (min-width: 1920px) {
@@ -4131,7 +4241,7 @@ p {
 
       h2 {
         @media (min-width: 320px) {
-          font-size: 5.5rem;
+          font-size: 3.5rem;
           margin-top: 0;
         }
 
@@ -4148,7 +4258,7 @@ p {
         }
 
         @media (min-width: 1440px) {
-          font-size: 12.5rem;
+          font-size: 10.5rem;
           margin-top: 25rem;
         }
 
@@ -4211,8 +4321,8 @@ p {
       }
 
       @media (min-width: 1024px) {
-        width: 30%;
-        margin-right: 4rem;
+        width: 25%;
+        margin-right: 1rem;
         margin-bottom: 0;
       }
 
@@ -4220,13 +4330,13 @@ p {
       }
 
       @media (min-width: 1440px) {
-        width: 30%;
-        margin-right: 8rem;
+        width: 25%;
+        margin-right: 3rem;
       }
 
       @media (min-width: 1920px) {
-        width: 20%;
-        margin-right: 8rem;
+        width: 15%;
+        margin-right: 3rem;
         margin-bottom: 0;
       }
 
@@ -4297,6 +4407,10 @@ p {
       }
 
       @media (min-width: 2560px) {
+      }
+
+      p {
+        margin-bottom: 0 !important;
       }
     }
   }
@@ -4691,41 +4805,41 @@ p {
       border-radius: 50%;
       object-fit: cover;
       @media (min-width: 320px) {
-        width: 15rem;
-        height: 15rem;
+        width: 13rem;
+        height: 13rem;
         margin-bottom: 2rem;
       }
 
       @media (min-width: 576px) {
-        width: 15rem;
-        height: 15rem;
+        width: 13rem;
+        height: 13rem;
         margin-bottom: 2rem;
       }
 
       @media (min-width: 768px) {
-        width: 16rem;
-        height: 16rem;
+        width: 14rem;
+        height: 14rem;
       }
 
       @media (min-width: 1024px) {
+        width: 14rem;
+        height: 14rem;
+      }
+
+      @media (min-width: 1200px) {
         width: 16rem;
         height: 16rem;
       }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1440px) {
         width: 18rem;
         height: 18rem;
-      }
-
-      @media (min-width: 1440px) {
-        width: 20rem;
-        height: 20rem;
         margin-bottom: 2rem;
       }
 
       @media (min-width: 1920px) {
-        width: 30rem;
-        height: 30rem;
+        width: 28rem;
+        height: 28rem;
         margin-bottom: 4.5rem;
       }
 
@@ -7252,6 +7366,11 @@ p {
   text-decoration: none;
 }
 
+.navigation ul {
+  padding: 0;
+  margin: 0;
+}
+
 .navigation li {
   display: inline;
 }
@@ -7370,6 +7489,166 @@ p {
 
         @media (min-width: 2560px) {
         }
+      }
+    }
+  }
+}
+
+// CUSTOM POST TYPE PAGINATION
+.page-numbers li a,
+.page-numbers li a:hover,
+.page-numbers a.current,
+.page-numbers li.disabled {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-numbers li span,
+.page-numbers li span:hover,
+.page-numbers span.current,
+.page-numbers li.disabled {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-numbers ul {
+  padding: 0;
+  margin: 0;
+}
+
+.page-numbers li {
+  display: inline;
+}
+
+.page-numbers li a,
+.page-numbers li a:hover,
+.page-numbers a.current,
+.page-numbers li.disabled {
+  background-color: $colorScrollbar;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 12px;
+  padding: 0.75rem;
+}
+
+.page-numbers li span,
+.page-numbers li span:hover,
+.page-numbers span.current,
+.page-numbers li.disabled {
+  background-color: $colorScrollbar;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 12px;
+  padding: 0.75rem;
+}
+
+.page-numbers li a:hover,
+.page-numbers a.current {
+  background-color: $colorPrincipal;
+}
+
+.page-numbers li span:hover,
+.page-numbers span.current {
+  background-color: $colorPrincipal;
+}
+
+.page-numbers {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @media (min-width: 320px) {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 2rem;
+    }
+
+    @media (min-width: 576px) {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-right: 2rem;
+    }
+
+    @media (min-width: 1200px) {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 2rem;
+    }
+
+    @media (min-width: 1440px) {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 2rem;
+    }
+
+    @media (min-width: 1920px) {
+      width: 5rem;
+      height: 5rem;
+      margin-right: 2rem;
+    }
+
+    @media (min-width: 2560px) {
+    }
+    a,
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 50% !important;
+      font-family: NunitoSansBold;
+
+      @media (min-width: 320px) {
+        font-size: 1.35rem;
+      }
+
+      @media (min-width: 576px) {
+        font-size: 1.35rem;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 1.3rem;
+      }
+
+      @media (min-width: 1024px) {
+        font-size: 1.35rem;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 1.65rem;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 1.65rem;
+      }
+
+      @media (min-width: 1920px) {
+        font-size: 2.25rem;
+      }
+
+      @media (min-width: 2560px) {
       }
     }
   }

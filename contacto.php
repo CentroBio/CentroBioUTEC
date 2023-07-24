@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 <div class="pagina-contacto">
 
-    <div class="padding-vertical padding-lateral">
+    <div class="padding-vertical-intro padding-lateral">
 
         <?php while ( have_posts() ) : the_post(); ?>
 

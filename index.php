@@ -2,16 +2,14 @@
 
 <?php get_header(); ?>
 
-<div class="pagina-blog seccion-blog padding-vertical padding-lateral">
+<div class="pagina-blog seccion-blog padding-vertical-intro padding-lateral">
     <h2 class="titulo-seccion"><?php _e( "Blog", "inotheme" ) ?></h2>
     <div class="row contenedor-blogs">
 
-        <?php	
-
+        <?php
             $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
             $args = array('posts_per_page' => '5', 'paged' => $paged);
             $query = new WP_Query( $args );
-            
         ?>
 
         <?php if ( $query->have_posts() ) : ?>

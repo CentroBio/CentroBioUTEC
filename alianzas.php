@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <div class="pagina-alianzas">
 
-    <div class="padding-vertical padding-lateral">
+    <div class="padding-vertical-intro padding-lateral">
 
         <h2 class="titulo-seccion"><?php _e( "Alianzas", "inotheme" ) ?></h2>
 

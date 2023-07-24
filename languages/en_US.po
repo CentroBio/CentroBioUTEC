@@ -10,10 +10,9 @@ msgstr ""
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Language: en_US\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 2.4.3\n"
 
 # NOMBRES LINKS
-
 # Inicio Imagen de fondo titulo
 msgid "Centro BIO UTEC"
 msgstr "Centro BIO UTEC"
@@ -147,8 +146,7 @@ msgid "Otros posts"
 msgstr "More posts"
 
 # TEXTOS INICIO / HOME
-
-# Intro No Bold 
+# Intro No Bold
 msgid "Transformamos la sociedad buscando soluciones en"
 msgstr "We transform society by seeking solutions in"
 
@@ -173,49 +171,62 @@ msgid "Nuestros aliados"
 msgstr "Partnerships"
 
 # TEXTOS FOOTER
-
 # Header NUESTRAS REDES
 msgid "Nuestras redes"
 msgstr "Social media"
 
 # Header CONVERSATORIOS
-msgid "Conversatorios"
-msgstr "Conferences"
+msgid "Redes sociales"
+msgstr "Social"
+
+# Texto COPYRIGHT 1
+msgid "Copyright "
+msgstr "Copyright "
 
 # Texto COPYRIGHT
-msgid "Copyright © 2021 Bio - UTEC. Todos los derechos reservados"
-msgstr "Copyright © 2021 Bio - UTEC. All rights reserved"
-
+msgid " Bio - UTEC. Todos los derechos reservados"
+msgstr " Bio - UTEC. All rights reserved"
 
 # TEXTOS CONTACTO (PAGE)
-
 # Texto Intro
 msgid "Para recibir información adicional o tomar contacto con el centro BIO deje su información en el siguiente formulario:"
 msgstr "To receive more information or get in contact with us, leave your contact details in the following form:"
 
 # TEXTOS BOTONES
-
-# Enviar 
+# Enviar
 msgid "Enviar"
 msgstr "Send"
 
-# Ver más 
+# Ver más
 msgid "Ver más"
 msgstr "See more"
+
+# Más Eventos
+msgid "Más eventos"
+msgstr "More events"
+
+# Más Noticias
+msgid "Más noticias"
+msgstr "More news"
+
+# Más publicaciones
+msgid "Más publicaciones"
+msgstr "More posts"
+
+# Video
+msgid "Video"
+msgstr "Video"
 
 # Ver oferta
 msgid "Ver oferta"
 msgstr "See offer"
 
 # TEXTO LABORATORIOS
-
 # Texto intro
 msgid "Los laboratorios de Bioingeniería son el lugar en donde los alumnos e investigadores pueden desarrollar prácticas y proyectos en las diversas áreas de la carrera, ya que se encuentran dotados con los equipos, materiales e instrumentos necesarios para llevar a cabo su aprendizaje."
 msgstr "Los laboratorios de Bioingeniería son el lugar en donde los alumnos e investigadores pueden desarrollar prácticas y proyectos en las diversas áreas de la carrera, ya que se encuentran dotados con los equipos, materiales e instrumentos necesarios para llevar a cabo su aprendizaje."
 
-
 # TEXTO TABS POST INVESTIGADOR
-
 # Biografia
 msgid "Biografía"
 msgstr "Biography"
@@ -229,7 +240,6 @@ msgid "Publicaciones"
 msgstr "Papers"
 
 # TEXTO MENUS DROPDOWNS
-
 # Menu nosotros titulo
 msgid "Acerca de BIO"
 msgstr "About BIO"
@@ -255,7 +265,6 @@ msgid "A través del Centro BIO y la carrera de Bioingeniería de UTEC, se desar
 msgstr "The Bio research center and the Faculty of Bioengineering at UTEC organize a series of events and master classes with the help of excellent national and international professionals. These events are held  every year and promote different research fields."
 
 # ALT IMAGENES
-
 # Icono ubicación
 msgid "Icono ubicación"
 msgstr "Location icon"
@@ -271,10 +280,6 @@ msgstr "Phone icon"
 # Logo centro BIO
 msgid "Logo Centro BIO"
 msgstr "Centro BIO logo"
-
-# Icono Facebook
-msgid "Icono Facebook"
-msgstr "Facebook Icon"
 
 # Icono Instagram
 msgid "Icono Instagram"

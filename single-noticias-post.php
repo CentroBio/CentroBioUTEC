@@ -27,7 +27,7 @@
         </h3>
     </div>
 
-    <div class="contenedor-post-relacionados padding-vertical padding-lateral-post-contenido">
+    <div class="contenedor-post-relacionados padding-vertical-intro padding-lateral">
 
         <?php $pID = get_the_ID() ?>
         <?php	
@@ -49,7 +49,7 @@
 
             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-            <div class="col-12 col-sm-12 col-md-10 col-lg-5 columna-post-relacionado">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-4 columna-post-relacionado">
                 <a class="flex-column-center-start" href="<?php echo get_the_permalink(); ?>">
                     <div class="imagen-post-relacionado">
                         <img src="<?php echo ipq_get_theme_image_url( get_post_thumbnail_id(), array( 450, 350, true ) ); ?>"

@@ -21,7 +21,7 @@
         </h3>
     </div>
 
-    <div class="contenedor-post-relacionados padding-vertical padding-lateral">
+    <div class="contenedor-post-relacionados padding-vertical-intro padding-lateral">
 
         <?php $pID = get_the_ID() ?>
         <?php	
