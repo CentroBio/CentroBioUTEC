@@ -190,32 +190,38 @@ p {
 }
 @media (min-width: 320px) {
   .subtitulo-fondo-imagen {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 576px) {
   .subtitulo-fondo-imagen {
-    font-size: 2rem;
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
   }
 }
 @media (min-width: 768px) {
   .subtitulo-fondo-imagen {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    margin-bottom: 3rem;
   }
 }
 @media (min-width: 1024px) {
   .subtitulo-fondo-imagen {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
+    margin-bottom: 4rem;
   }
 }
 @media (min-width: 1440px) {
   .subtitulo-fondo-imagen {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
+    margin-bottom: 6rem;
   }
 }
 @media (min-width: 1920px) {
   .subtitulo-fondo-imagen {
-    font-size: 6.5rem;
+    font-size: 6rem;
+    margin-bottom: 8rem;
   }
 }
 .texto-intro {
@@ -760,28 +766,28 @@ p {
 }
 @media (min-width: 320px) {
   .titulo-seccion {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 576px) {
   .titulo-seccion {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-bottom: 4rem;
     margin-top: 3rem;
   }
 }
 @media (min-width: 768px) {
   .titulo-seccion {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
   .titulo-seccion {
-    font-size: 5rem;
+    font-size: 3.25rem;
     margin-bottom: 5rem;
     margin-top: 3rem;
   }
@@ -795,7 +801,7 @@ p {
 }
 @media (min-width: 1920px) {
   .titulo-seccion {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 14rem;
   }
 }
@@ -807,28 +813,28 @@ p {
 }
 @media (min-width: 320px) {
   .subtitulo-seccion {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 576px) {
   .subtitulo-seccion {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-bottom: 4rem;
     margin-top: 3rem;
   }
 }
 @media (min-width: 768px) {
   .subtitulo-seccion {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
   .subtitulo-seccion {
-    font-size: 5rem;
+    font-size: 3.25rem;
     margin-bottom: 5rem;
     margin-top: 3rem;
   }
@@ -842,7 +848,7 @@ p {
 }
 @media (min-width: 1920px) {
   .subtitulo-seccion {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 14rem;
   }
 }
@@ -5092,28 +5098,28 @@ p {
 }
 @media (min-width: 320px) {
   .pagina-post-investigador h3 {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 576px) {
   .pagina-post-investigador h3 {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-bottom: 4rem;
     margin-top: 3rem;
   }
 }
 @media (min-width: 768px) {
   .pagina-post-investigador h3 {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
   .pagina-post-investigador h3 {
-    font-size: 5rem;
+    font-size: 3.25rem;
     margin-bottom: 5rem;
     margin-top: 3rem;
   }
@@ -5127,7 +5133,7 @@ p {
 }
 @media (min-width: 1920px) {
   .pagina-post-investigador h3 {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 14rem;
   }
 }
@@ -5189,28 +5195,28 @@ p {
 }
 @media (min-width: 320px) {
   .pagina-single-post figure blockquote strong {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 576px) {
   .pagina-single-post figure blockquote strong {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-bottom: 4rem;
     margin-top: 3rem;
   }
 }
 @media (min-width: 768px) {
   .pagina-single-post figure blockquote strong {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
   .pagina-single-post figure blockquote strong {
-    font-size: 5rem;
+    font-size: 3.25rem;
     margin-bottom: 5rem;
     margin-top: 3rem;
   }
@@ -5224,7 +5230,7 @@ p {
 }
 @media (min-width: 1920px) {
   .pagina-single-post figure blockquote strong {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 14rem;
   }
 }
@@ -5246,28 +5252,28 @@ p {
 }
 @media (min-width: 320px) {
   .pagina-single-post h3 {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 576px) {
   .pagina-single-post h3 {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-bottom: 4rem;
     margin-top: 3rem;
   }
 }
 @media (min-width: 768px) {
   .pagina-single-post h3 {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
   .pagina-single-post h3 {
-    font-size: 5rem;
+    font-size: 3.25rem;
     margin-bottom: 5rem;
     margin-top: 3rem;
   }
@@ -5281,7 +5287,7 @@ p {
 }
 @media (min-width: 1920px) {
   .pagina-single-post h3 {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 14rem;
   }
 }
@@ -5401,28 +5407,28 @@ p {
 }
 @media (min-width: 320px) {
   .pagina-single-post .wp-block-image:first-of-type figure figcaption strong {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 576px) {
   .pagina-single-post .wp-block-image:first-of-type figure figcaption strong {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-bottom: 4rem;
     margin-top: 3rem;
   }
 }
 @media (min-width: 768px) {
   .pagina-single-post .wp-block-image:first-of-type figure figcaption strong {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
   .pagina-single-post .wp-block-image:first-of-type figure figcaption strong {
-    font-size: 5rem;
+    font-size: 3.25rem;
     margin-bottom: 5rem;
     margin-top: 3rem;
   }
@@ -5436,7 +5442,7 @@ p {
 }
 @media (min-width: 1920px) {
   .pagina-single-post .wp-block-image:first-of-type figure figcaption strong {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 14rem;
   }
 }
@@ -5511,28 +5517,28 @@ p {
 }
 @media (min-width: 320px) {
   .pagina-single-noticia figure blockquote strong {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 576px) {
   .pagina-single-noticia figure blockquote strong {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-bottom: 4rem;
     margin-top: 3rem;
   }
 }
 @media (min-width: 768px) {
   .pagina-single-noticia figure blockquote strong {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
   .pagina-single-noticia figure blockquote strong {
-    font-size: 5rem;
+    font-size: 3.25rem;
     margin-bottom: 5rem;
     margin-top: 3rem;
   }
@@ -5546,7 +5552,7 @@ p {
 }
 @media (min-width: 1920px) {
   .pagina-single-noticia figure blockquote strong {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 14rem;
   }
 }
@@ -5568,28 +5574,28 @@ p {
 }
 @media (min-width: 320px) {
   .pagina-single-noticia h3 {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 576px) {
   .pagina-single-noticia h3 {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-bottom: 4rem;
     margin-top: 3rem;
   }
 }
 @media (min-width: 768px) {
   .pagina-single-noticia h3 {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
   .pagina-single-noticia h3 {
-    font-size: 5rem;
+    font-size: 3.25rem;
     margin-bottom: 5rem;
     margin-top: 3rem;
   }
@@ -5603,7 +5609,7 @@ p {
 }
 @media (min-width: 1920px) {
   .pagina-single-noticia h3 {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 14rem;
   }
 }
@@ -5721,28 +5727,28 @@ p {
 }
 @media (min-width: 320px) {
   .pagina-single-noticia .wp-block-image:first-of-type figure figcaption strong {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 576px) {
   .pagina-single-noticia .wp-block-image:first-of-type figure figcaption strong {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-bottom: 4rem;
     margin-top: 3rem;
   }
 }
 @media (min-width: 768px) {
   .pagina-single-noticia .wp-block-image:first-of-type figure figcaption strong {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
   .pagina-single-noticia .wp-block-image:first-of-type figure figcaption strong {
-    font-size: 5rem;
+    font-size: 3.25rem;
     margin-bottom: 5rem;
     margin-top: 3rem;
   }
@@ -5756,7 +5762,7 @@ p {
 }
 @media (min-width: 1920px) {
   .pagina-single-noticia .wp-block-image:first-of-type figure figcaption strong {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 14rem;
   }
 }
@@ -5844,28 +5850,28 @@ p {
 }
 @media (min-width: 320px) {
   .pagina-single-proyecto h3 {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 576px) {
   .pagina-single-proyecto h3 {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-bottom: 4rem;
     margin-top: 3rem;
   }
 }
 @media (min-width: 768px) {
   .pagina-single-proyecto h3 {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
   .pagina-single-proyecto h3 {
-    font-size: 5rem;
+    font-size: 3.25rem;
     margin-bottom: 5rem;
     margin-top: 3rem;
   }
@@ -5879,7 +5885,7 @@ p {
 }
 @media (min-width: 1920px) {
   .pagina-single-proyecto h3 {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 14rem;
   }
 }
