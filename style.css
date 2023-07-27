@@ -861,7 +861,7 @@ p {
 @media (min-width: 1440px) {
   .subtitulo-seccion {
     font-size: 3.5rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 @media (min-width: 1920px) {
@@ -5140,13 +5140,13 @@ p {
 @media (min-width: 1440px) {
   .pagina-post-investigador h3 {
     font-size: 3.5rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 @media (min-width: 1920px) {
   .pagina-post-investigador h3 {
     font-size: 6rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 .pagina-post-investigador h3:first-of-type {
@@ -5294,13 +5294,13 @@ p {
 @media (min-width: 1440px) {
   .pagina-single-post h3 {
     font-size: 3.5rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 @media (min-width: 1920px) {
   .pagina-single-post h3 {
     font-size: 6rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 .pagina-single-post h3:first-of-type {
@@ -5449,13 +5449,13 @@ p {
 @media (min-width: 1440px) {
   .pagina-single-post .wp-block-image:first-of-type figure figcaption strong {
     font-size: 3.5rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 @media (min-width: 1920px) {
   .pagina-single-post .wp-block-image:first-of-type figure figcaption strong {
     font-size: 6rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 @media (min-width: 1440px) {
@@ -5616,13 +5616,13 @@ p {
 @media (min-width: 1440px) {
   .pagina-single-noticia h3 {
     font-size: 3.5rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 @media (min-width: 1920px) {
   .pagina-single-noticia h3 {
     font-size: 6rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 .pagina-single-noticia h3:first-of-type {
@@ -5769,13 +5769,13 @@ p {
 @media (min-width: 1440px) {
   .pagina-single-noticia .wp-block-image:first-of-type figure figcaption strong {
     font-size: 3.5rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 @media (min-width: 1920px) {
   .pagina-single-noticia .wp-block-image:first-of-type figure figcaption strong {
     font-size: 6rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 @media (min-width: 1440px) {
@@ -5892,13 +5892,13 @@ p {
 @media (min-width: 1440px) {
   .pagina-single-proyecto h3 {
     font-size: 3.5rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 @media (min-width: 1920px) {
   .pagina-single-proyecto h3 {
     font-size: 6rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.5rem !important;
   }
 }
 @media (min-width: 1440px) {
