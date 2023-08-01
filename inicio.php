@@ -129,6 +129,12 @@
                     <div class="boton-ver-mas">
                         <a href="<?php the_permalink(); ?>"><?php _e( "Ver más", "inotheme" ) ?></a>
                     </div>
+                    <?php if (get_post_meta( get_the_ID(), '_eventos_link_video', 1 ) != "") { ?>
+                    <div class="boton-video-evento">
+                        <a href="<?php echo get_post_meta( get_the_ID(), '_eventos_link_video', 1 ); ?>"
+                            target="_blank"><?php _e( "Video", "inotheme" ) ?></a>
+                    </div>
+                    <?php } ?>
                 </div>
 
             </div>
