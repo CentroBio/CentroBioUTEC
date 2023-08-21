@@ -6793,9 +6793,9 @@ p {
 
   .imagen-post {
     img {
-      width: 100% !important;
-      height: 100% !important;
-      object-fit: cover;
+      width: 80% !important;
+      height: 80% !important;
+      object-fit: contain;
     }
 
     @media (min-width: 320px) {
