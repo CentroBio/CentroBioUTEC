@@ -1342,7 +1342,7 @@ p {
 @media (min-width: 576px) {
   .imagen-logos-carousel {
     width: 20rem !important;
-    height: 8rem;
+    height: 10rem;
   }
 }
 @media (min-width: 768px) {
@@ -1366,7 +1366,7 @@ p {
 @media (min-width: 1440px) {
   .imagen-logos-carousel {
     width: 28rem !important;
-    height: 10.5rem;
+    height: 14rem;
     object-fit: contain;
   }
 }
