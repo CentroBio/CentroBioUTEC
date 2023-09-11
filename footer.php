@@ -75,13 +75,13 @@
             autoplay: true,
             cssEase: 'cubic-bezier(0.33, 1, 0.68, 1)',
             infinite: true,
-            slidesToShow: 5,
-            slidesToScroll: 5,
+            slidesToShow: 4,
+            slidesToScroll: 4,
             arrows: false,
             dots: true,
             appendDots: ".slider-aliados",
             responsive: [{
-                    breakpoint: 768,
+                    breakpoint: 1201,
                     settings: {
                         slidesToShow: 4,
                         slidesToScroll: 4,
@@ -89,9 +89,25 @@
                     }
                 },
                 {
-                    breakpoint: 577,
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 769,
                     settings: {
                         slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 577,
+                    settings: {
+                        slidesToShow: 1,
                         slidesToScroll: 3,
                         infinite: true,
                     }

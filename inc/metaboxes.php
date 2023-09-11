@@ -73,6 +73,11 @@ function metabox_aliado() {
             'id' => $prefix . 'enlace_web',
             'type' => 'text',
         ) );
+        $cmb->add_field( array(
+            'name' => 'Vigencia',
+            'id' => $prefix . 'vigencia',
+            'type' => 'text',
+        ) );
 }
 
 add_action( 'cmb2_init', 'metabox_ofertas' );

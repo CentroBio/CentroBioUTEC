@@ -272,13 +272,16 @@
             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
             <div class="slide-aliado">
-
                 <a class="imagen-logos-carousel"
                     href="<?php echo get_post_meta( get_the_ID(), '_aliado_enlace_web', 1 );?>" target="_blank">
-                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"
-                        alt="<?php echo get_the_title();?>" />
+                    <div class="contenedor-aliado">
+                        <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"
+                            alt="<?php echo get_the_title();?>" />
+                        <p class="aliado-vigencia texto-footer">
+                            <?php echo get_post_meta( get_the_ID(), '_aliado_vigencia', 1 );?>
+                        </p>
+                    </div>
                 </a>
-
             </div>
 
             <?php endwhile;?>
