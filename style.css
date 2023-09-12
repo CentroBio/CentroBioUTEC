@@ -1385,7 +1385,8 @@ p {
   height: 100%;
 }
 .contenedor-aliado .aliado-vigencia {
-  color: #212121;
+  font-family: FiraBold;
+  color: deepskyblue;
   font-weight: 700;
   margin: 0;
 }
@@ -1411,7 +1412,7 @@ p {
 }
 @media (min-width: 320px) {
   .imagen-logos-carousel-pagina {
-    width: 16rem !important;
+    width: 18rem !important;
     height: 5rem;
   }
 }

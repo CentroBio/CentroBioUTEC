@@ -41,6 +41,10 @@ msgstr "Staff"
 msgid "Alianzas"
 msgstr "Partnerships"
 
+# Vigencia Alianza
+msgid "Vigencia"
+msgstr "Validity"
+
 # Investigadores
 msgid "Investigadores"
 msgstr "Research team"
