@@ -30,10 +30,14 @@
                 <div class="columna-miembro-aliado col-12 col-sm-12 col-md-6 col-lg-4 flex-column-start-center">
                     <a class="imagen-logos-carousel-pagina imagen-aliado"
                         href="<?php echo get_post_meta( get_the_ID(), '_aliado_enlace_web', 1 ); ?>" target="_blank">
-                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
-                            alt="<?php echo get_the_title();?>">
+                        <div class="contenedor-aliado">
+                            <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
+                                alt="<?php echo get_the_title();?>">
+                            <p class="aliado-vigencia texto-footer">
+                                <?php echo get_post_meta( get_the_ID(), '_aliado_vigencia', 1 );?>
+                            </p>
+                        </div>
                     </a>
-
                 </div>
 
                 <?php endwhile; // end of the loop. ?>
