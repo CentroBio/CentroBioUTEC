@@ -1435,22 +1435,18 @@ p {
     margin: 0;
 
     @media (min-width: 320px) {
+      margin-top: 1rem;
     }
 
     @media (min-width: 576px) {
     }
 
     @media (min-width: 768px) {
-    }
-
-    @media (min-width: 1024px) {
-    }
-
-    @media (min-width: 1200px) {
+      margin-top: 1.5rem;
     }
 
     @media (min-width: 1440px) {
-      margin-top: 1.5rem;
+      margin-top: 2.5rem;
     }
 
     @media (min-width: 1920px) {

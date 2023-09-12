@@ -1389,9 +1389,19 @@ p {
   font-weight: 700;
   margin: 0;
 }
-@media (min-width: 1440px) {
+@media (min-width: 320px) {
+  .contenedor-aliado .aliado-vigencia {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 768px) {
   .contenedor-aliado .aliado-vigencia {
     margin-top: 1.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .contenedor-aliado .aliado-vigencia {
+    margin-top: 2.5rem;
   }
 }
 .imagen-logos-carousel-pagina img {
