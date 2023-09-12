@@ -33,9 +33,11 @@
                         <div class="contenedor-aliado">
                             <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id(), 'full' ); ?>"
                                 alt="<?php echo get_the_title();?>">
-                            <p class="aliado-vigencia texto-footer">
+                            <?php if (get_post_meta( get_the_ID(), '_aliado_vigencia', 1 ) != "") { ?>
+                            <p class="aliado-vigencia texto-footer"><?php _e( "Vigencia", "inotheme" ) ?>:
                                 <?php echo get_post_meta( get_the_ID(), '_aliado_vigencia', 1 );?>
                             </p>
+                            <?php } ?>
                         </div>
                     </a>
                 </div>

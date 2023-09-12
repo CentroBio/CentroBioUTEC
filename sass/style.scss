@@ -1334,7 +1334,7 @@ p {
   }
 
   @media (min-width: 320px) {
-    width: 16rem !important;
+    width: 18rem !important;
     height: 5rem;
   }
 
@@ -1430,7 +1430,8 @@ p {
   height: 100%;
 
   .aliado-vigencia {
-    color: #212121;
+    font-family: FiraBold;
+    color: $colorPrincipal;
     font-weight: 700;
     margin: 0;
 
